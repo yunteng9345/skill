@@ -11,3 +11,7 @@ git init 初始化本地仓库
 用git remote -v显示更详细的信息
 
 git push origin <branch name> 推送分支到远程仓库
+
+推送冲突
+1.git pull
+2.git branch --set-up stream-to=origin/dev dev
