@@ -20,6 +20,11 @@
 
 考试完毕：接下来就剩下下学期大四唯一的一次考试！ 7/12/2018 9:46:56 AM 
 
+我的学校game
+
+git reset head <file>暂存区回退到工作区
+git remote set-url origin https://...../.git
+
 ******
 接下的俩周准备一下去南京参加培训。
 
