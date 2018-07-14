@@ -26,7 +26,7 @@ git reset head <file>暂存区回退到工作区
 git remote set-url origin https://...../.git
 
 ******
-接下的俩周准备一下去南京参加培训。
+学习spring boot 官方文档 7/14/2018 10:04:16 AM 
 
 
 
