@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>学生列表</title>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+<h1 >I am a coder!</h1>
+搜索：
+<input th:text="text" th:value="ids" />
+<a th:href="@{/stu/selectOne(id=ids)}">delete</a>
+
+<ul>
+    <li th:each="stu1: ${s}">
+        <span th:text="${stu1}"></span>
+        <span th:text="${}"></span>
+
+    </li>
+</ul>
+
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>是否毕业</th>
+        <th>删除</th>
+    </tr>
+
+
+    <tr th:each="user : ${stu}">
+
+
+        <td th:text="${user.id}">学号</td>
+        <td th:text="${user.name}">姓名</td>
+        <td th:text="${user.sex}">性别</td>
+        <td th:text="${user.age}">年龄</td>
+        <td th:if="${user.isBiye()}==true">是</td>
+        <td th:if="${user.isBiye()}==false">否</td>
+
+        <td><a th:href="@{/stu/delet(id=${user.id})}">delete</a></td>
+        <!--<form th:action="@{/stu/delet(id=${user.id})}" method="POST">-->
+           <!--<input type="submit" value="删除"/>-->
+        <!--</form>-->
+
+    </tr>
+
+
+
+</table>
+<br><br><br>
+
+<form th:action="@{/stu/addStu}" th:object="${student}" method="POST">
+    <label>学号:</label>
+    <input type="text" th:field="*{id}" value="" /><br/>
+
+    <label >姓名:</label>
+    <input type="text" th:field="*{name}"  /> <br/>
+
+    <label >性别:</label>
+    <select  th:field="*{sex}" >
+        <option th:value="男" >男</option>
+        <option th:value="女">女</option>
+    </select>
+    <br>
+
+    <label>年龄:</label>
+    <input type="text" th:field="*{age}" size="10" value="198" /><br/>
+
+    <label >是否毕业</label>
+    <select th:field="*{biye}">
+        <option th:value="true">是</option>
+        <option th:value="false" >否</option>
+
+    </select>
+
+
+    <br/>
+
+    <input type="submit" value="添加"/>
+
+</form>
+
+
+<!--<select>
+    <option th:each="user:${userList}" th:value="${user.id}" th:text="${user.name}">我是默认值</option>
+</select>-->
+
+</body>
+</html>
