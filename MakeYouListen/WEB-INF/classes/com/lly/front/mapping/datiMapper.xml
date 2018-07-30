@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的 
+	例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀) -->
+<mapper namespace="com.lly.front.mapping.datiMapper">
+	<!-- 插入用户信息 -->
+	<insert id="insertUserInfo">
+		insert into dati(name,time,branch)
+		values(#{name},#{time},#{branch})
+	</insert>
+
+
+	<!--根据openid查询是否存在用户 -->
+	<select id="selectall" resultType="com.lly.front.model.DaTi">
+		select * from dati ORDER BY time asc
+	</select>
+
+	
+	
+
+
+</mapper>
