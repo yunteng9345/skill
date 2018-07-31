@@ -95,3 +95,6 @@ java基础复习
 公司odi操作，java基础熟悉
 7/30/2018 1:32:44 PM 
 
+阅读spring boot官方文档，阅读thymeleaf官方文档。
+7/31/2018 1:31:58 PM 
+
