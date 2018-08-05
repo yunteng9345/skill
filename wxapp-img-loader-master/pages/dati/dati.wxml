@@ -1,0 +1,15 @@
+<!--pages/dati/dati.wxml-->
+
+<view >
+{{timu.tcontent}}
+<button bindtap='butA' data-ta="{{timu.ta}}" data-ans="{{timu.ans}}" >{{timu.ta}} </button>
+<button bindtap='butB' data-tb="{{timu.tb}}" data-ans="{{timu.ans}}">{{timu.tb}} </button>
+<button bindtap='butC' data-tc="{{timu.tc}}"  data-ans="{{timu.ans}}">{{timu.tc}} </button>
+<button bindtap='butD' data-td="{{timu.td}}" data-ans="{{timu.ans}}">{{timu.td}} </button>
+
+<view class="r" wx:if="{{flag==true}}"><text >{{result}}</text></view>
+<view  class="e" wx:else > <text >{{result}}</text></view>
+
+<button bindtap='refresh'>下一题</button>
+<button bindtap='joinbook' data-tcontnet="{{timu.tcontent}}" data-ta="{{timu.ta}}" data-tb="{{timu.tb}}" data-tc="{{timu.tc}}" data-td="{{timu.td}}" data-ans="{{timu.ans}}"  >加入错题本</button>
+</view>

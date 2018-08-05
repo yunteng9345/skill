@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/zixun/zixun",
+    "pages/index/index",
+    "pages/top/top",
+    "pages/message/message",
+    "pages/logs/logs",
+    "pages/datiindex/datiindex",
+    "pages/dati/dati",
+    "pages/errorbook/errorbook"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "通信段",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "grey",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/zixun/zixun",
+        "iconPath": "images/zx.png",
+        "selectedIconPath": "images/zx.png",
+        "text": "资讯"
+      },
+      {
+        "pagePath": "pages/datiindex/datiindex",
+        "iconPath": "images/zx.png",
+        "selectedIconPath": "images/zx.png",
+        "text": "答题"
+      },
+      {
+        "pagePath": "pages/errorbook/errorbook",
+        "iconPath": "images/zx.png",
+        "selectedIconPath": "images/zx.png",
+        "text": "错题本"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "iconPath": "images/ph.png",
+        "selectedIconPath": "images/ph.png",
+        "text": "排行榜"
+      }
+    ]
+  }
+}
