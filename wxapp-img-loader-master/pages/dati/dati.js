@@ -128,18 +128,30 @@ A,B,C,D选择后判断是否正确
   /*
   下一题
   */
-  refresh()
+  refresh(e)
   {
-    var that=this;
-    wx.getStorage({
-      key: 'timu',
-      success: function (res) {
-        i++;
-        that.setData({
-          timu: res.data[i]
-        })
-      }
-    })
+    var that = this;
+    if (e.currentTarget.dataset.td==null){
+      wx.showToast({
+        title: '本关卡通过！',
+        icon: 'succes',
+        duration: 1000,
+        mask: true
+      })
+    }
+    else{
+      wx.getStorage({
+        key: 'timu',
+        success: function (res) {
+          i++;
+          that.setData({
+            timu: res.data[i]
+          })
+        }
+      })
+    }
+    
+    
   },
   /*
 加入错题本
@@ -178,7 +190,8 @@ A,B,C,D选择后判断是否正确
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    i=0;
+    console.log("onUnload")
   },
 
   /**

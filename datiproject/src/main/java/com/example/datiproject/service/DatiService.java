@@ -17,4 +17,8 @@ public class DatiService {
      */
     public  List<Timu> selectByGk(Timu timu){return datiMapper.selectByGk(timu);}
 
+    public  List<Timu> showAllTimu(){return  datiMapper.showAllTimu();}
+    public  Integer addTimu(Timu timu){return datiMapper.addTimu(timu);}
+    public Integer deleteTimu(String tno){return  datiMapper.deleteTimu(tno);}
+
 }

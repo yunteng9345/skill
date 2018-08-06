@@ -11,4 +11,5 @@ public class Timu {
     private String td;
     private String ans;
     private String guanka;
+    private Integer tno;
 }

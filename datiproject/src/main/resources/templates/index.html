@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+    <meta charset="UTF-8"/>
+    <title>微信答题系统后台</title>
+
+</head>
+<body style=>
+<h1>微信答题系统后台管理</h1>
+
+共有<span th:text="${count}"></span>道题目<br>
+
+
+<!--搜索-->
+<form th:action="@{/timu/search}"  th:method="post" >
+    <input type="text"  name="search" value="请输入关卡号"  >
+    <input type="submit" value="搜索" >
+</form>
+
+<!--搜索-->
+<table border="1">
+    <tr>
+        <th>题号</th>
+        <th>内容</th>
+        <th>A选项</th>
+        <th>B选项</th>
+        <th>C选项</th>
+        <th>D选项</th>
+        <th>答案</th>
+        <th>关卡</th>
+        <th>删除</th>
+
+    </tr>
+
+    <tr th:each="ti : ${timu}">
+        <td th:text="${ti.tno}">题号</td>
+        <td th:text="${ti.tcontent}">内容</td>
+        <td th:text="${ti.ta}">A选项</td>
+        <td th:text="${ti.tb}">B选项</td>
+        <td th:text="${ti.tc}">C选项</td>
+        <td th:text="${ti.td}">D选项</td>
+        <td th:text="${ti.ans}">答案</td>
+        <td th:text="${ti.guanka}">关卡</td>
+        <td><a th:href="@{/timu/delet(tno=${ti.tno})}">删除</a></td>
+
+    </tr>
+
+</table>
+<br><br>
+
+
+<form th:action="@{/timu/addTimu}" th:object="${timu1}" method="POST">
+    <label>题目内容</label>
+    <textarea  type="text" th:field="*{tcontent}"/><br/>
+
+    <label>A选项</label>
+
+    <textarea type="text" th:field="*{ta}"/>
+
+    <label>B选项</label>
+    <textarea type="text" th:field="*{tb}"/> <br/>
+
+    <label>C选项</label>
+    <textarea type="text" th:field="*{tc}"/>
+
+    <label>D选项</label>
+    <textarea type="text" th:field="*{td}"/><br/>
+
+    <label>答案</label>
+    <textarea type="text" th:field="*{ans}"/>
+
+    <label>关卡</label>
+    <textarea type="text" th:field="*{guanka}"/><br/>
+
+
+    <!--<label >班级</label>-->
+    <!--<select th:field="*{uclass}">-->
+    <!--<option th:value="xxx班级">1xxxx班级</option>-->
+    <!--<option th:value="xxx班级" >2xxxx班级</option>-->
+    <!--</select>-->
+
+    <br/>
+    <input type="submit" value="添加"/>
+
+</form>
+
+
+<!--<select>
+    <option th:each="user:${userList}" th:value="${user.id}" th:text="${user.name}">我是默认值</option>
+</select>-->
+
+</body>
+</html>
