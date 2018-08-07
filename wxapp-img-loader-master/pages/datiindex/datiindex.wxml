@@ -1,7 +1,7 @@
 <!--pages/dtindex/datiindex.wxml-->
 
 <view wx:for="{{items}}" wx:for-index="index" wx:for-item="item" wx:key="xxx">
-<button bindtap='dati' id='{{index+1}}'>关卡{{index+1}}</button>
+<button bindtap='dati' id='{{index+1}}'>巴特尔最棒{{index+1}}</button>
 </view>
 
 

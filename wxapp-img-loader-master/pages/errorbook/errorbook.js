@@ -5,14 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+  timu:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  
+  onLoad: function () {
+    // var that = this;
+    // wx.request({
+    //   url: 'http://localhost:8080/timu/errorTimu',
+    //   header: { //请求头
+    //     "Content-Type": "applciation/json"
+    //   },
+    //   method: "GET", //get为默认方法/POST
+    //   success: function (res) {
+    //     that.setData({
+    //       timu: res.data
+    //     })
+       
+    //   },
+    //   fail: function (err) {
+
+    //   }
+    // })
+  console.log("cuoti onload")
   },
 
   /**
@@ -26,7 +43,24 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    console.log("cuoti onshow")
+    var that = this;
+    wx.request({
+      url: 'http://localhost:8080/timu/errorTimu',
+      header: { //请求头
+        "Content-Type": "applciation/json"
+      },
+      method: "GET", //get为默认方法/POST
+      success: function (res) {
+        that.setData({
+          timu: res.data
+        })
+
+      },
+      fail: function (err) {
+
+      }
+    })
   },
 
   /**

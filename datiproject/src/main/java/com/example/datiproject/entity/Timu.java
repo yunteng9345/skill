@@ -12,4 +12,5 @@ public class Timu {
     private String ans;
     private String guanka;
     private Integer tno;
+    private String isError;
 }

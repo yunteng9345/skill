@@ -20,5 +20,7 @@ public class DatiService {
     public  List<Timu> showAllTimu(){return  datiMapper.showAllTimu();}
     public  Integer addTimu(Timu timu){return datiMapper.addTimu(timu);}
     public Integer deleteTimu(String tno){return  datiMapper.deleteTimu(tno);}
+    public Integer updateError(String tno){return  datiMapper.updateError(tno);}
+    public  List<Timu> selectByTno(){return datiMapper.selectByTno();}
 
 }

@@ -1,2 +1,6 @@
 <!--pages/errorbook/errorbook.wxml-->
 <text>错题本</text>
+<view >
+<text>第{{timu.guanka}}关:{{timu.tcontent}}</text>
+<text>正确答案{{timu.ans}}</text>
+</view>

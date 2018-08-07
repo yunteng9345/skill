@@ -15,5 +15,7 @@ public interface DatiMapper {
     Integer addTimu(Timu timu);
     Integer deleteTimu(String tno);
    // List<Timu> searchByGk(Timu timu);
+    Integer updateError(String tno);
+    List<Timu> selectByTno();
 
 }
