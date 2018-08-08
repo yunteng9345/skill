@@ -17,5 +17,6 @@ public interface DatiMapper {
    // List<Timu> searchByGk(Timu timu);
     Integer updateError(String tno);
     List<Timu> selectByTno();
+    Integer yichuError(String tno);
 
 }

@@ -1,1 +1,4 @@
 /* pages/errorbook/errorbook.wxss */
+.right{
+  color:lime
+}

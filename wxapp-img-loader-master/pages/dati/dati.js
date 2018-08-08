@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    c:i+1,
     timu: "",
     ti: "",
     result: "",
@@ -59,8 +59,10 @@ Page({
 
       that.setData({
         result: "正确",
-        flag: true
+        flag: true,
+        c: i + 1
       })
+      
       this.refresh(e)
     } else {
       that.setData({
@@ -79,8 +81,11 @@ Page({
 
       that.setData({
         result: "正确",
-        flag: true
+        flag: true,
+        c: i + 1
+
       })
+      
       this.refresh(e)
     } else {
       that.setData({
@@ -98,8 +103,10 @@ Page({
 
       that.setData({
         result: "正确",
-        flag: true
+        flag: true,
+        c: i + 1
       })
+      c++ ,
       this.refresh(e)
     } else {
       that.setData({
@@ -117,7 +124,8 @@ Page({
 
       that.setData({
         result: "正确",
-        flag: true
+        flag: true,
+        c: i + 1
       })
       this.refresh(e)
     } else {
@@ -143,6 +151,7 @@ Page({
     //     mask: true
     //   })
     // }
+   
     wx.getStorage({
       key: 'timu',
       success: function(res) {
@@ -156,7 +165,8 @@ Page({
           })
         } else {
           that.setData({
-            timu: res.data[i]
+            timu: res.data[i],
+            c: i+1
           })
         }
 
@@ -194,6 +204,7 @@ Page({
       }
     })
   },
+ 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -220,6 +231,7 @@ Page({
    */
   onUnload: function() {
     i = 0;
+    c:i+1;
     console.log("onUnload")
   },
 

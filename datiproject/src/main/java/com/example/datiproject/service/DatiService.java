@@ -22,5 +22,5 @@ public class DatiService {
     public Integer deleteTimu(String tno){return  datiMapper.deleteTimu(tno);}
     public Integer updateError(String tno){return  datiMapper.updateError(tno);}
     public  List<Timu> selectByTno(){return datiMapper.selectByTno();}
-
+    public  Integer yichuError(String tno){return  datiMapper.yichuError(tno);}
 }

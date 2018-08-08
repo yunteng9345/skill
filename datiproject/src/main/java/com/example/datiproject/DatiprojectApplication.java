@@ -12,9 +12,12 @@ import javax.swing.*;
 
 @SpringBootApplication
 @MapperScan("com.example.datiproject.dao")
-public class DatiprojectApplication {
-
-
+public class DatiprojectApplication extends SpringBootServletInitializer {
+    @Override
+    protected SpringApplicationBuilder configure(
+            SpringApplicationBuilder application) {
+        return application.sources(DatiprojectApplication.class);
+    }
     public static void main(String[] args) {
         SpringApplication.run(DatiprojectApplication.class, args);
     }

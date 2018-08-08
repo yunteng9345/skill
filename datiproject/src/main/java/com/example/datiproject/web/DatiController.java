@@ -101,4 +101,12 @@ public class DatiController {
         datiService.updateError(tno);
        System.out.println("加入错题本成功！");
     }
+    /*
+     * 移除错题本
+     */
+    @RequestMapping(value = "/yichu",method = RequestMethod.GET)
+    public @ResponseBody  void yichu(String tno){
+        datiService.yichuError(tno);
+        System.out.println("移除错题成功！");
+    }
 }

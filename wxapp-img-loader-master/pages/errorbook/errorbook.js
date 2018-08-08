@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  timu:""
+  ti:""
   },
 
   /**
@@ -42,8 +42,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-    console.log("cuoti onshow")
+  allErrorTimu:function(){
     var that = this;
     wx.request({
       url: 'http://localhost:8080/timu/errorTimu',
@@ -52,8 +51,10 @@ Page({
       },
       method: "GET", //get为默认方法/POST
       success: function (res) {
+
+       // console.log(res.data)
         that.setData({
-          timu: res.data
+          ti: res.data.timu
         })
 
       },
@@ -61,6 +62,33 @@ Page({
 
       }
     })
+  },
+  onShow: function () {
+    this.allErrorTimu()
+
+  },
+  yichu: function (e) {
+    var that=this
+    var tno = e.currentTarget.dataset.tno
+    //console.log(tno)
+    wx.request({
+      method: "GET", //get为默认方法/POST
+      url: 'http://localhost:8080/timu/yichu',
+      header: { //请求头
+        "Content-Type": "applciation/json"
+      },
+      data:{
+        'tno':tno
+      },
+      success: function (res) {
+        that.allErrorTimu()
+      },
+      fail: function (err) {
+
+      }
+    })
+    
+
   },
 
   /**

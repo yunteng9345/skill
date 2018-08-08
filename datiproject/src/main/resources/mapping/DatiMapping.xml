@@ -22,8 +22,13 @@
     </update>
 
     <select id="selectByTno" resultType="com.example.datiproject.entity.Timu">
-      select * from timu where tno="1"
+      select * from timu where isError="1" order by tno desc
     </select>
+
+    <update id="yichuError" parameterType="String">
+        update timu set isError="0" where tno=#{tno}
+    </update>
+
 
 
 

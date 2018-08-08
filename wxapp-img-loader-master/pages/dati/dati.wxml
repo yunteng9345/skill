@@ -1,6 +1,7 @@
 <!--pages/dati/dati.wxml-->
 
 <view >
+<view>第{{c}}题</view>
 {{timu.tcontent}}
 <button bindtap='butA' data-ta="{{timu.ta}}" data-ans="{{timu.ans}}" >{{timu.ta}} </button>
 <button bindtap='butB' data-tb="{{timu.tb}}" data-ans="{{timu.ans}}">{{timu.tb}} </button>
