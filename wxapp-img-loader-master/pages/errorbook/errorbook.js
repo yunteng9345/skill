@@ -45,7 +45,7 @@ Page({
   allErrorTimu:function(){
     var that = this;
     wx.request({
-      url: 'http://localhost:8080/timu/errorTimu',
+      url: 'https://www.yunteng0923.cn/t/timu/errorTimu',
       header: { //请求头
         "Content-Type": "applciation/json"
       },
@@ -73,7 +73,7 @@ Page({
     //console.log(tno)
     wx.request({
       method: "GET", //get为默认方法/POST
-      url: 'http://localhost:8080/timu/yichu',
+      url: 'https://www.yunteng0923.cn/t/timu/yichu',
       header: { //请求头
         "Content-Type": "applciation/json"
       },

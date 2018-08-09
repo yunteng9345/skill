@@ -1,0 +1,1181 @@
+Aug 05, 2018 8:54:49 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 05, 2018 8:54:49 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 8:54:49 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 8:54:49 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 05, 2018 8:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 05, 2018 8:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 05, 2018 8:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'MakeYouListen'
+Aug 05, 2018 8:54:49 PM org.springframework.web.context.support.XmlWebApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Fri Jul 27 17:43:43 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 8:54:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Aug 05, 2018 8:54:49 PM org.springframework.web.context.support.XmlWebApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Fri Jul 27 17:43:40 CST 2018]; root of context hierarchy
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+SEVERE: The web application [/MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Aug 05, 2018 8:54:49 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+SEVERE: The web application [/MakeYouListen] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak.
+Aug 05, 2018 8:54:49 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 8:54:49 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 8:54:49 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 8:54:49 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 8:54:59 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Aug 05, 2018 8:54:59 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 8:54:59 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Aug 05, 2018 8:54:59 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 8:54:59 PM org.apache.tomcat.util.digester.Digester endElement
+SEVERE: End event threw exception
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.tomcat.util.IntrospectionUtils.callMethod1(IntrospectionUtils.java:856)
+	at org.apache.tomcat.util.digester.SetNextRule.end(SetNextRule.java:201)
+	at org.apache.tomcat.util.digester.Digester.endElement(Digester.java:1081)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endElement(AbstractSAXParser.java:609)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:183)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:628)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:679)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:253)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:427)
+Caused by: java.lang.IllegalArgumentException: addChild:  Child name '' is not unique
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1003)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:993)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	... 27 more
+
+Aug 05, 2018 8:54:59 PM org.apache.catalina.startup.Catalina load
+WARNING: Catalina.start using conf/server.xml: Error at (141, 131) : addChild:  Child name '' is not unique
+Aug 05, 2018 8:54:59 PM org.apache.catalina.startup.Catalina start
+SEVERE: Cannot start server. Server instance is not configured.
+Aug 05, 2018 8:58:01 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Aug 05, 2018 8:58:01 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 8:58:01 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [datiproject] does not meet these criteria and has been changed to [/datiproject]
+Aug 05, 2018 8:58:01 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 8:58:01 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [MovieWithYou] does not meet these criteria and has been changed to [/MovieWithYou]
+Aug 05, 2018 8:58:01 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.86
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Apr 9 2018 20:16:54 UTC
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.86.0
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/jdk1.8.0_171/jre
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_171-b11
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/root/apache-tomcat-7.0.86/conf/logging.properties
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/root/apache-tomcat-7.0.86
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/root/apache-tomcat-7.0.86
+Aug 05, 2018 8:58:01 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/root/apache-tomcat-7.0.86/temp
+Aug 05, 2018 8:58:01 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 05, 2018 8:58:02 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 8:58:03 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 8:58:03 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2513 ms
+Aug 05, 2018 8:58:03 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 05, 2018 8:58:03 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.86
+Aug 05, 2018 8:58:03 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [4.0]. Default version will be used.
+Aug 05, 2018 8:58:04 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /root/apache-tomcat-7.0.86/webapps/datiproject-0.0.1-SNAPSHOT.jar does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5270)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5461)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1702)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1692)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Aug 05, 2018 8:58:04 PM org.apache.catalina.core.ContainerBase startInternal
+SEVERE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/datiproject]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1241)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:819)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1702)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1692)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/datiproject]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5462)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 6 more
+
+Aug 05, 2018 8:58:04 PM org.apache.catalina.core.ContainerBase startInternal
+SEVERE: A child container failed during start
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1241)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:300)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:444)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:758)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1702)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1692)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1249)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:819)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 6 more
+
+Aug 05, 2018 8:58:04 PM org.apache.catalina.startup.Catalina start
+SEVERE: The required Server component failed to start so Tomcat is unable to start.
+org.apache.catalina.LifecycleException: Failed to start component [StandardServer[8005]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:705)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:294)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:428)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:758)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 7 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:444)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 9 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1249)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:300)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 11 more
+
+Aug 05, 2018 8:58:04 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 8:58:04 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 8:58:04 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 05, 2018 8:58:04 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 8:58:04 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:01:40 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Aug 05, 2018 9:01:40 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:01:40 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [MovieWithYou] does not meet these criteria and has been changed to [/MovieWithYou]
+Aug 05, 2018 9:01:40 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.86
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Apr 9 2018 20:16:54 UTC
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.86.0
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/jdk1.8.0_171/jre
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_171-b11
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/root/apache-tomcat-7.0.86/conf/logging.properties
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/root/apache-tomcat-7.0.86
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/root/apache-tomcat-7.0.86
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/root/apache-tomcat-7.0.86/temp
+Aug 05, 2018 9:01:40 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 05, 2018 9:01:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:01:40 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:01:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1522 ms
+Aug 05, 2018 9:01:41 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 05, 2018 9:01:41 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.86
+Aug 05, 2018 9:01:41 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [4.0]. Default version will be used.
+Aug 05, 2018 9:01:42 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/MakeYouListen.war
+Aug 05, 2018 9:01:42 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/MakeYouListen/WEB-INF/lib/javaee-api-6.0-3.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Aug 05, 2018 9:01:42 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/MakeYouListen/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Aug 05, 2018 9:01:43 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Aug 05, 2018 9:01:43 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Aug 05, 2018 9:01:43 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Aug 05, 2018 9:01:43 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Aug 05, 2018 9:01:43 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:01:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Aug 05, 2018 9:01:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Aug 05, 2018 9:01:43 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+Aug 05, 2018 9:01:43 PM org.springframework.web.context.support.XmlWebApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Sun Aug 05 21:01:43 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:01:43 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Aug 05 21:01:43 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:01:45 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Aug 05 21:01:43 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:01:46 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 2302 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'MakeYouListen'
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.DispatcherServlet initServletBean
+INFO: FrameworkServlet 'MakeYouListen': initialization started
+Aug 05, 2018 9:01:46 PM org.springframework.web.context.support.XmlWebApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:01:46 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:01:46 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:01:46 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:01:46 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:01:46 PM org.springframework.web.servlet.DispatcherServlet initServletBean
+INFO: FrameworkServlet 'MakeYouListen': initialization completed in 474 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/MakeYouListen.war has finished in 4,603 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/host-manager
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/host-manager has finished in 98 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/datiproject
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/datiproject has finished in 50 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/docs
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/docs has finished in 136 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/manager
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/manager has finished in 76 ms
+Aug 05, 2018 9:01:46 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/examples
+Aug 05, 2018 9:01:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 05, 2018 9:01:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 05, 2018 9:01:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@70cd6a93')
+Aug 05, 2018 9:01:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@2be267a4')
+Aug 05, 2018 9:01:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/examples has finished in 1,383 ms
+Aug 05, 2018 9:01:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:01:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:01:48 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 7609 ms
+Aug 05, 2018 9:07:48 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/datiproject]
+Aug 05, 2018 9:08:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war
+Aug 05, 2018 9:08:08 PM org.apache.catalina.startup.ContextConfig beforeStart
+SEVERE: Exception fixing docBase for context [/datiproject_war]
+java.util.zip.ZipException: error in opening zip file
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:103)
+	at sun.net.www.protocol.jar.URLJarFile.<init>(URLJarFile.java:93)
+	at sun.net.www.protocol.jar.URLJarFile.getJarFile(URLJarFile.java:69)
+	at sun.net.www.protocol.jar.JarFileFactory.get(JarFileFactory.java:99)
+	at sun.net.www.protocol.jar.JarURLConnection.connect(JarURLConnection.java:122)
+	at sun.net.www.protocol.jar.JarURLConnection.getJarFile(JarURLConnection.java:89)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:111)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:727)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:852)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:390)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:388)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:144)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1017)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:993)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Aug 05, 2018 9:08:08 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Invalid or unreadable WAR file : error in opening zip file
+	at org.apache.naming.resources.WARDirContext.setDocBase(WARDirContext.java:136)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5270)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5461)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1017)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:993)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Aug 05, 2018 9:08:08 PM org.apache.catalina.core.ContainerBase addChildInternal
+SEVERE: ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/datiproject_war]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1017)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:993)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Error in resourceStart()
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5462)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 10 more
+
+Aug 05, 2018 9:08:08 PM org.apache.catalina.startup.HostConfig deployWAR
+SEVERE: Error deploying web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war
+java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/datiproject_war]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1021)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:993)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2020)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Aug 05, 2018 9:08:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war has finished in 32 ms
+Aug 05, 2018 9:08:18 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/datiproject_war]
+Aug 05, 2018 9:08:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war
+Aug 05, 2018 9:08:19 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/datiproject_war/WEB-INF/lib/tomcat-embed-el-8.5.31.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+Aug 05, 2018 9:08:19 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Aug 05, 2018 9:08:21 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:08:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: 1 Spring WebApplicationInitializers detected on classpath
+Aug 05, 2018 9:08:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war has finished in 2,579 ms
+Aug 05, 2018 9:09:11 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 05, 2018 9:09:11 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:09:11 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:09:11 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 05, 2018 9:09:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 05, 2018 9:09:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 05, 2018 9:09:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'MakeYouListen'
+Aug 05, 2018 9:09:11 PM org.springframework.web.context.support.XmlWebApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:01:46 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:09:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Aug 05, 2018 9:09:11 PM org.springframework.web.context.support.XmlWebApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Sun Aug 05 21:01:43 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:09:11 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:09:11 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:09:11 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:09:11 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:09:28 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Aug 05, 2018 9:09:28 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:09:28 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [dt] does not meet these criteria and has been changed to [/dt]
+Aug 05, 2018 9:09:28 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:09:28 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [MovieWithYou] does not meet these criteria and has been changed to [/MovieWithYou]
+Aug 05, 2018 9:09:28 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.86
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Apr 9 2018 20:16:54 UTC
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.86.0
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/jdk1.8.0_171/jre
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_171-b11
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/root/apache-tomcat-7.0.86/conf/logging.properties
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/root/apache-tomcat-7.0.86
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/root/apache-tomcat-7.0.86
+Aug 05, 2018 9:09:28 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/root/apache-tomcat-7.0.86/temp
+Aug 05, 2018 9:09:28 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 05, 2018 9:09:28 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:09:29 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:09:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1487 ms
+Aug 05, 2018 9:09:29 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 05, 2018 9:09:29 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.86
+Aug 05, 2018 9:09:29 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [4.0]. Default version will be used.
+Aug 05, 2018 9:09:30 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/dt/WEB-INF/lib/tomcat-embed-el-8.5.31.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+Aug 05, 2018 9:09:30 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Aug 05, 2018 9:09:32 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:09:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: 1 Spring WebApplicationInitializers detected on classpath
+Aug 05, 2018 9:09:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/MakeYouListen.war
+Aug 05, 2018 9:09:33 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/MakeYouListen/WEB-INF/lib/javaee-api-6.0-3.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Aug 05, 2018 9:09:33 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/MakeYouListen/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Aug 05, 2018 9:09:34 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Aug 05, 2018 9:09:34 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Aug 05, 2018 9:09:34 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Aug 05, 2018 9:09:34 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Aug 05, 2018 9:09:34 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:09:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Aug 05, 2018 9:09:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Aug 05, 2018 9:09:34 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+Aug 05, 2018 9:09:34 PM org.springframework.web.context.support.XmlWebApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Sun Aug 05 21:09:34 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:09:34 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+Aug 05, 2018 9:09:35 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Aug 05 21:09:34 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Aug 05 21:09:34 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:09:36 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 1871 ms
+Aug 05, 2018 9:09:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'MakeYouListen'
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.DispatcherServlet initServletBean
+INFO: FrameworkServlet 'MakeYouListen': initialization started
+Aug 05, 2018 9:09:36 PM org.springframework.web.context.support.XmlWebApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:09:36 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:09:36 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:09:36 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:09:36 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:09:36 PM org.springframework.web.servlet.DispatcherServlet initServletBean
+INFO: FrameworkServlet 'MakeYouListen': initialization completed in 479 ms
+Aug 05, 2018 9:09:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/MakeYouListen.war has finished in 3,836 ms
+Aug 05, 2018 9:09:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war
+Aug 05, 2018 9:09:36 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/datiproject_war/WEB-INF/lib/tomcat-embed-el-8.5.31.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+Aug 05, 2018 9:09:36 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Aug 05, 2018 9:09:38 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:09:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: 1 Spring WebApplicationInitializers detected on classpath
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war has finished in 2,171 ms
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/host-manager
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/host-manager has finished in 79 ms
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/docs
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/docs has finished in 63 ms
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/manager
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/manager has finished in 66 ms
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/examples
+Aug 05, 2018 9:09:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 05, 2018 9:09:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 05, 2018 9:09:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1865fa7d')
+Aug 05, 2018 9:09:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@4256a2cd')
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/examples has finished in 265 ms
+Aug 05, 2018 9:09:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:09:39 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:09:39 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 10677 ms
+Aug 05, 2018 9:12:48 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 05, 2018 9:12:48 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:12:48 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:12:48 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 05, 2018 9:12:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 05, 2018 9:12:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 05, 2018 9:12:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'MakeYouListen'
+Aug 05, 2018 9:12:48 PM org.springframework.web.context.support.XmlWebApplicationContext doClose
+INFO: Closing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:09:36 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:12:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+Aug 05, 2018 9:12:48 PM org.springframework.web.context.support.XmlWebApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Sun Aug 05 21:09:34 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:12:48 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:12:48 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:12:48 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:12:48 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:12:55 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+Aug 05, 2018 9:12:55 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:12:55 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:12:55 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [MovieWithYou] does not meet these criteria and has been changed to [/MovieWithYou]
+Aug 05, 2018 9:12:55 PM org.apache.tomcat.util.digester.SetPropertiesRule begin
+WARNING: [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.86
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Apr 9 2018 20:16:54 UTC
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.86.0
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            3.10.0-693.el7.x86_64
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /opt/java/jdk1.8.0_171/jre
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_171-b11
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /root/apache-tomcat-7.0.86
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/root/apache-tomcat-7.0.86/conf/logging.properties
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dignore.endorsed.dirs=
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/root/apache-tomcat-7.0.86
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/root/apache-tomcat-7.0.86
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/root/apache-tomcat-7.0.86/temp
+Aug 05, 2018 9:12:55 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 05, 2018 9:12:55 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:12:55 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:12:55 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1487 ms
+Aug 05, 2018 9:12:55 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 05, 2018 9:12:55 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.86
+Aug 05, 2018 9:12:56 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [4.0]. Default version will be used.
+Aug 05, 2018 9:12:56 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/dt/WEB-INF/lib/tomcat-embed-el-8.5.31.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+Aug 05, 2018 9:12:56 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Aug 05, 2018 9:12:58 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:12:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: 1 Spring WebApplicationInitializers detected on classpath
+Aug 05, 2018 9:12:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/MakeYouListen.war
+Aug 05, 2018 9:12:59 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/MakeYouListen/WEB-INF/lib/javaee-api-6.0-3.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Aug 05, 2018 9:12:59 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/MakeYouListen/WEB-INF/lib/servlet-api.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/servlet/Servlet.class
+Aug 05, 2018 9:13:00 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/core is already defined
+Aug 05, 2018 9:13:00 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/fmt is already defined
+Aug 05, 2018 9:13:00 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/sql is already defined
+Aug 05, 2018 9:13:00 PM org.apache.catalina.startup.TaglibUriRule body
+INFO: TLD skipped. URI: http://java.sun.com/jstl/xml is already defined
+Aug 05, 2018 9:13:00 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:13:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+Aug 05, 2018 9:13:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Aug 05, 2018 9:13:00 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+Aug 05, 2018 9:13:00 PM org.springframework.web.context.support.XmlWebApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Sun Aug 05 21:13:00 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:13:00 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+Aug 05, 2018 9:13:01 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Aug 05 21:13:00 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Aug 05 21:13:00 CST 2018]; root of context hierarchy
+Aug 05, 2018 9:13:02 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 2139 ms
+Aug 05, 2018 9:13:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'MakeYouListen'
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.DispatcherServlet initServletBean
+INFO: FrameworkServlet 'MakeYouListen': initialization started
+Aug 05, 2018 9:13:02 PM org.springframework.web.context.support.XmlWebApplicationContext prepareRefresh
+INFO: Refreshing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:13:02 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:13:02 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.handler.SimpleUrlHandlerMapping registerHandler
+INFO: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+Aug 05, 2018 9:13:02 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping register
+INFO: Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:13:02 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+INFO: Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 05 21:13:02 CST 2018]; parent: Root WebApplicationContext
+Aug 05, 2018 9:13:03 PM org.springframework.web.servlet.DispatcherServlet initServletBean
+INFO: FrameworkServlet 'MakeYouListen': initialization completed in 429 ms
+Aug 05, 2018 9:13:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/MakeYouListen.war has finished in 3,958 ms
+Aug 05, 2018 9:13:03 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war
+Aug 05, 2018 9:13:03 PM org.apache.catalina.loader.WebappClassLoaderBase validateJarFile
+INFO: validateJarFile(/root/apache-tomcat-7.0.86/webapps/datiproject_war/WEB-INF/lib/tomcat-embed-el-8.5.31.jar) - jar not loaded. See Servlet Spec 3.0, section 10.7.2. Offending class: javax/el/Expression.class
+Aug 05, 2018 9:13:03 PM org.apache.catalina.deploy.WebXml setVersion
+WARNING: Unknown version string [3.1]. Default version will be used.
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Aug 05, 2018 9:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: 1 Spring WebApplicationInitializers detected on classpath
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deployment of web application archive /root/apache-tomcat-7.0.86/webapps/datiproject_war.war has finished in 2,098 ms
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/host-manager
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/host-manager has finished in 66 ms
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/docs
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/docs has finished in 54 ms
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/manager
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/manager has finished in 59 ms
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /root/apache-tomcat-7.0.86/webapps/examples
+Aug 05, 2018 9:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 05, 2018 9:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 05, 2018 9:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4a46cf5f')
+Aug 05, 2018 9:13:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@77f43c9f')
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /root/apache-tomcat-7.0.86/webapps/examples has finished in 214 ms
+Aug 05, 2018 9:13:05 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-443"]
+Aug 05, 2018 9:13:05 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 05, 2018 9:13:05 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 9977 ms

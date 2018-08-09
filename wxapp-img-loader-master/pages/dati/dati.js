@@ -1,7 +1,6 @@
 // pages/dati/dati.js
 var i = 0
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -19,7 +18,7 @@ Page({
   onLoad: function(options) {
     var that = this;
     wx.request({
-      url: 'http://localhost:8080/timu/dati?guanka=' + options.id,
+      url: 'https://www.yunteng0923.cn/t/timu/dati?guanka=' + options.id,
       header: { //请求头
         "Content-Type": "applciation/json"
       },
@@ -185,7 +184,7 @@ Page({
    
     wx.request({
       method: "GET", //get为默认方法/POST
-      url: 'http://localhost:8080/timu/erro',
+      url: 'https://www.yunteng0923.cn/t/timu/erro',
       header: { //请求头
         "content-type": "applciation/json"
       },
