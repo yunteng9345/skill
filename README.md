@@ -116,3 +116,5 @@ java基础复习
 阅读spring boot官方文档
 8/11/2018 2:36:43 PM 
 
+阅读spring boot官方文档到39. Quartz Scheduler，阅读spring core technologies
+8/13/2018 3:11:53 PM 
