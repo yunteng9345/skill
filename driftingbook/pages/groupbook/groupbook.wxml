@@ -1,0 +1,8 @@
+<!--pages/groupbook/groupbook.wxml-->
+
+<view>
+<text>群书架列表</text>
+<button class='but' type='primary'>转发到群聊，生成群书架</button>
+
+</view>
+
