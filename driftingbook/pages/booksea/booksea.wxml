@@ -1,2 +1,9 @@
-<!--pages/booksea/booksea.wxml-->
-<text>pages/booksea/booksea.wxml</text>
+
+<view class='layout_vertical'>
+
+<navigator class='looks-view' wx:for="{{booklist}}" wx:key="index" wx:for-item="item"
+url="../bookseadetail/bookseadetail?image={{item.bookurl}}&title={{item.bookname}}&author={{bookauthor}}">
+    <image src='{{item.bookurl}}'style="width: 100px; height: 150px" mode='scaleToFill' ></image>
+</navigator>
+
+</view>

@@ -54,8 +54,36 @@ Page({
       hasUserInfo: true
     })
   },
- 
+ addbook(){
+   // 允许从相机和相册扫码
+   wx.scanCode({
+     success: (res) => {
+       console.log(res.result)
+       //通过豆瓣api请求图书信息
+       wx.request({
+         method:'GET',
+         url: 'http://localhost:8080/kq/json/book',
+         header: {//请求头
+           "Content-Type": "applciation/json"
+         },
+         data:{
+           "isbn":res.result
+         },
 
+         success: function (res) {
+           wx.navigateTo({
+             url: './addmybook/addmybook?image='+res.data.image+'&title='+res.data.title+
+             '&author='+res.data.author,
+           })
+           console.log(res.data.image)
+          console.log(res.data.title)
+           console.log(res.data.author[0])
+         }
+       })
+     }
+   })
+
+ },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

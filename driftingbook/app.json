@@ -11,7 +11,8 @@
     "pages/mine/mybook/mybook",
     "pages/mine/mybookbar/mybookbar",
     "pages/mine/about/about",
-    "pages/mine/mybookbar/creatbookbar/createbookbar"
+    "pages/mine/mybookbar/creatbookbar/createbookbar",
+    "pages/mine/addmybook/addmybook"
   ],
   "window": {
     "backgroundTextStyle": "light",

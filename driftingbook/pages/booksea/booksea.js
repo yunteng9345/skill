@@ -6,7 +6,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+    booklist: [
+
+      {
+        "bookname": "计算机网络（第7版）",
+        "bookurl": "https://img1.doubanio.com/view/subject/m/public/s29300537.jpg",
+        "bookauthor": "谢希仁"
+      },
+      {
+        "bookname": "编译原理学习指导",
+        "bookurl": "https://img3.doubanio.com/view/subject/m/public/s8976735.jpg",
+        "bookauthor": "莫礼平"
+      },
+      {
+        "bookname": "计算机网络（第7版）",
+        "bookurl": "https://img1.doubanio.com/view/subject/m/public/s29300537.jpg",
+        "bookauthor": "谢希仁"
+      },
+      {
+        "bookname": "编译原理学习指导",
+        "bookurl": "https://img3.doubanio.com/view/subject/m/public/s8976735.jpg",
+        "bookauthor": "莫礼平"
+      }, {
+        "bookname": "计算机网络（第7版）",
+        "bookurl": "https://img1.doubanio.com/view/subject/m/public/s29300537.jpg",
+        "bookauthor": "谢希仁"
+      },
+      {
+        "bookname": "编译原理学习指导",
+        "bookurl": "https://img3.doubanio.com/view/subject/m/public/s8976735.jpg",
+        "bookauthor": "莫礼平"
+      }
+    
+    ]
    
   },
 

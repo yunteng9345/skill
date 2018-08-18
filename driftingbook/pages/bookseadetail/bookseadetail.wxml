@@ -1,2 +1,16 @@
 <!--pages/bookseadetail/bookseadetail.wxml-->
 <text>pages/bookseadetail/bookseadetail.wxml</text>
+<view class='layout_vertical'>
+<image src='{{image}}' style="width: 100px; height: 150px" mode='scaleToFill'></image>
+<text>{{title}}</text>
+<text>{{author}}</text>
+<text>发布者：云腾</text>
+<text>持书者：云腾</text>
+
+<view class='layout_horizontal'>
+<button type='primary'>转发</button>
+<button type='primary'>预约</button>
+<button type='primary'>小纸条</button>
+</view>
+
+</view>

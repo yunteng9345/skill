@@ -19,7 +19,7 @@
 }
 
 .list view {
-  font-size: 12pt;
+  font-size: 9pt;
 }
 
 .list .weui-cell {
@@ -31,4 +31,13 @@
   vertical-align: middle;
   width: 20px;
   height: 20px;
+}
+.addbut{
+  width:60%;
+  height:30%;
+ 
+  font-size: 11px;
+  margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px
 }

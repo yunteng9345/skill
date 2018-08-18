@@ -16,7 +16,7 @@ Page({
   },
   creat(){
     wx.navigateTo({
-      url: '../bookbar/creatbookbar/creatbookbar',
+      url: '/creatbookbar/creatbookbar',
     })
   },
   /**

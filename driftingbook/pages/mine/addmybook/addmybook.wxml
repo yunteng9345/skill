@@ -1,0 +1,10 @@
+<!--pages/mine/addmybook/addmybook.wxml-->
+
+<view class='layout_vertical'>
+<text>pages/mine/addmybook/addmybook.wxml</text>
+<image src='{{image}}' style="width: 100px; height: 150px" mode='scaleToFill'> </image>
+<text>{{title}}</text>
+
+<view>
+<text>{{author}}</text></view>
+</view>

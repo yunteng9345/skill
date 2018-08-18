@@ -1,1 +1,14 @@
 /* pages/bookseadetail/bookseadetail.wxss */
+.layout_vertical{
+
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+/*横向布局  */
+.layout_horizontal{
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}

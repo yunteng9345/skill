@@ -13,6 +13,8 @@
       <view>
         <text>{{userInfo.nickName}}</text>
       </view>
+      
+      <button bindtap='addbook' class='addbut' type='primary'>扫一扫书书后条码，发布漂流书</button>
     </view>
   </view>
   <!--主体-->
