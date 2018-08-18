@@ -1,0 +1,634 @@
+13-Aug-2018 19:21:05.089 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/demo0716101-0.0.1-SNAPSHOT]
+13-Aug-2018 19:21:05.091 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+13-Aug-2018 19:21:05.144 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [demo0716101-0.0.1-SNAPSHOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+13-Aug-2018 19:21:05.167 INFO [71] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:90)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:05.609 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/kq] has started
+13-Aug-2018 19:21:05.609 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-Aug-2018 19:21:05.609 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+13-Aug-2018 19:21:05.633 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [kq] registered the JDBC driver [com.alibaba.druid.proxy.DruidDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:05.633 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [kq] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:05.634 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [kq] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+13-Aug-2018 19:21:06.294 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-web-2.0.3.RELEASE.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-web-2.0.3.RELEASE.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.531 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.531 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/logback-classic-1.2.3.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/logback-classic-1.2.3.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.532 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-actuator-2.0.3.RELEASE.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-actuator-2.0.3.RELEASE.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.560 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.564 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/jackson-core-2.9.6.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/jackson-core-2.9.6.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.719 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/micrometer-core-1.0.5.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/micrometer-core-1.0.5.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.766 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-2.0.3.RELEASE.jar] for annotations
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-2.0.3.RELEASE.jar (No such file or directory)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:225)
+	at java.util.zip.ZipFile.<init>(ZipFile.java:155)
+	at java.util.jar.JarFile.<init>(JarFile.java:166)
+	at java.util.jar.JarFile.<init>(JarFile.java:130)
+	at org.apache.tomcat.util.compat.JreCompat.jarFileNewInstance(JreCompat.java:188)
+	at org.apache.tomcat.util.scan.JarFileUrlJar.<init>(JarFileUrlJar.java:65)
+	at org.apache.tomcat.util.scan.JarFactory.newInstance(JarFactory.java:49)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1979)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1960)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1913)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1153)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:765)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:299)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5154)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:06.770 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-legacy-1.1.0.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.770 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-actuator-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.770 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-web-5.0.7.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.770 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-context-5.0.7.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.770 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/jackson-annotations-2.9.0.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.771 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-actuator-autoconfigure-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.771 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/validation-api-2.0.1.Final.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.771 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/fastjson-1.2.32.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.771 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-json-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.771 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/snakeyaml-1.19.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.771 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-core-5.0.7.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.772 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/jackson-module-parameter-names-2.9.6.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.772 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.772 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-web-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.773 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-beans-5.0.7.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.773 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-expression-5.0.7.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.776 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/logback-classic-1.2.3.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.776 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-starter-actuator-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.776 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/logback-core-1.2.3.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.777 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-aop-5.0.7.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.777 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/jackson-core-2.9.6.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.778 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/micrometer-core-1.0.5.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.779 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.ContextConfig.processResourceJARs Failed to process JAR found at URL [file:/root/apache-tomcat-8.5.32/webapps/kq/WEB-INF/lib/spring-boot-2.0.3.RELEASE.jar] for static resources to be included in context with name [/kq]
+13-Aug-2018 19:21:06.815 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Exception starting Context with name [/kq]
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/kq]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3839)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:292)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5612)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1390)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1394)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1362)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at org.apache.tomcat.util.scan.StandardJarScanner.process(StandardJarScanner.java:373)
+	at org.apache.tomcat.util.scan.StandardJarScanner.scan(StandardJarScanner.java:191)
+	at org.apache.jasper.servlet.TldScanner.scanJars(TldScanner.java:262)
+	at org.apache.jasper.servlet.TldScanner.scan(TldScanner.java:104)
+	at org.apache.jasper.servlet.JasperInitializer.onStartup(JasperInitializer.java:101)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5245)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 8 more
+
+13-Aug-2018 19:21:06.816 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [/kq] is completed
+13-Aug-2018 19:21:07.857 INFO [64] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:90)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:29.743 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Aug-2018 19:21:29.743 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:21:29.794 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:21:29.845 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Aug-2018 19:21:29.867 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+13-Aug-2018 19:21:29.908 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [datiproject-0.0.1-SNAPSHOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+13-Aug-2018 19:21:29.917 INFO [Abandoned connection cleanup thread] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+ java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1329)
+	at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1004)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.checkContextClassLoaders(AbandonedConnectionCleanupThread.java:90)
+	at com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:63)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:29.920 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcherServlet'
+13-Aug-2018 19:21:29.921 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+13-Aug-2018 19:21:29.944 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [t] registered the JDBC driver [com.alibaba.druid.proxy.DruidDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.944 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [t] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.950 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [t] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+13-Aug-2018 19:21:29.952 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+13-Aug-2018 19:21:29.952 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+13-Aug-2018 19:21:29.978 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'MakeYouListen'
+13-Aug-2018 19:21:29.978 INFO [www.yunteng0923.cn-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Sun Aug 12 11:06:19 CST 2018]; parent: Root WebApplicationContext
+13-Aug-2018 19:21:29.981 INFO [www.yunteng0923.cn-startStop-2] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+13-Aug-2018 19:21:29.981 INFO [www.yunteng0923.cn-startStop-2] org.springframework.web.context.support.XmlWebApplicationContext.doClose Closing Root WebApplicationContext: startup date [Sun Aug 12 11:06:18 CST 2018]; root of context hierarchy
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.983 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:29.984 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [MakeYouListen] registered the JDBC driver [org.apache.ibatis.datasource.unpooled.UnpooledDataSource.DriverProxy] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+13-Aug-2018 19:21:30.006 WARNING [www.yunteng0923.cn-startStop-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [MakeYouListen] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:64)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+13-Aug-2018 19:21:30.010 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:21:30.011 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:21:30.012 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:21:30.013 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:21:36.326 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+13-Aug-2018 19:21:36.348 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+13-Aug-2018 19:21:36.349 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.32
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 19:50:35 UTC
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.32.0
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-693.el7.x86_64
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_181/jre
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /root/apache-tomcat-8.5.32
+13-Aug-2018 19:21:36.350 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /root/apache-tomcat-8.5.32
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/root/apache-tomcat-8.5.32/conf/logging.properties
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/root/apache-tomcat-8.5.32
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/root/apache-tomcat-8.5.32
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/root/apache-tomcat-8.5.32/temp
+13-Aug-2018 19:21:36.351 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Aug-2018 19:21:36.602 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:21:37.132 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Aug-2018 19:21:37.151 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:21:37.152 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Aug-2018 19:21:37.164 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1748 ms
+13-Aug-2018 19:21:37.197 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Aug-2018 19:21:37.197 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+13-Aug-2018 19:21:40.158 INFO [www.yunteng0923.cn-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Aug-2018 19:21:40.260 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+13-Aug-2018 19:21:44.948 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+13-Aug-2018 19:21:50.577 SEVERE [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/kq]
+ java.io.FileNotFoundException: /root/apache-tomcat-8.5.32/webapps/demo0716101-0.0.1-SNAPSHOT.war (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:90)
+	at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:605)
+	at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:738)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:301)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:94)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:395)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:149)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+13-Aug-2018 19:21:50.579 SEVERE [Catalina-startStop-1] org.apache.catalina.core.ContainerBase.startInternal A child container failed during start
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/kq]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn].StandardContext[/kq]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	... 6 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.webresources.StandardRoot@617de210]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4907)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5042)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 more
+Caused by: java.lang.IllegalArgumentException: The main resource set specified [/root/apache-tomcat-8.5.32/webapps/demo0716101-0.0.1-SNAPSHOT.war] is not valid
+	at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:748)
+	at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:706)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 9 more
+
+13-Aug-2018 19:21:50.580 SEVERE [main] org.apache.catalina.core.ContainerBase.startInternal A child container failed during start
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:941)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:681)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:353)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:493)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[www.yunteng0923.cn]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1421)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1411)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:949)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 6 more
+
+13-Aug-2018 19:21:50.580 SEVERE [main] org.apache.catalina.startup.Catalina.start The required Server component failed to start so Tomcat is unable to start.
+ org.apache.catalina.LifecycleException: Failed to start component [StandardServer[8005]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:681)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:353)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:493)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 7 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 9 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:949)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 11 more
+
+13-Aug-2018 19:21:50.581 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:21:50.581 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:21:50.581 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Aug-2018 19:21:50.584 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:21:50.585 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:21:50.589 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+13-Aug-2018 19:23:06.608 WARNING [main] org.apache.tomcat.util.digester.SetPropertiesRule.begin [SetPropertiesRule]{Server/Service/Engine/Host/Context} Setting property 'debug' to '0' did not find a matching property.
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.32
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 19:50:35 UTC
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.32.0
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            3.10.0-693.el7.x86_64
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+13-Aug-2018 19:23:06.631 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/java/jdk1.8.0_181/jre
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /root/apache-tomcat-8.5.32
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /root/apache-tomcat-8.5.32
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/root/apache-tomcat-8.5.32/conf/logging.properties
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Aug-2018 19:23:06.632 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Aug-2018 19:23:06.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Aug-2018 19:23:06.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+13-Aug-2018 19:23:06.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/root/apache-tomcat-8.5.32
+13-Aug-2018 19:23:06.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/root/apache-tomcat-8.5.32
+13-Aug-2018 19:23:06.633 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/root/apache-tomcat-8.5.32/temp
+13-Aug-2018 19:23:06.633 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Aug-2018 19:23:06.919 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:23:07.547 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Aug-2018 19:23:07.566 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:23:07.567 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Aug-2018 19:23:07.580 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1878 ms
+13-Aug-2018 19:23:07.620 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Aug-2018 19:23:07.620 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+13-Aug-2018 19:23:10.490 INFO [www.yunteng0923.cn-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Aug-2018 19:23:10.586 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+13-Aug-2018 19:23:15.060 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+13-Aug-2018 19:23:20.538 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/root/apache-tomcat-8.5.32/webapps/datiproject-0.0.1-SNAPSHOT.war]
+13-Aug-2018 19:23:22.913 INFO [www.yunteng0923.cn-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Aug-2018 19:23:23.023 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log 2 Spring WebApplicationInitializers detected on classpath
+13-Aug-2018 19:23:26.842 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+13-Aug-2018 19:23:31.642 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/root/apache-tomcat-8.5.32/webapps/datiproject-0.0.1-SNAPSHOT.war] has finished in [11,102] ms
+13-Aug-2018 19:23:31.644 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/apache-tomcat-8.5.32/webapps/host-manager]
+13-Aug-2018 19:23:31.682 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/apache-tomcat-8.5.32/webapps/host-manager] has finished in [38] ms
+13-Aug-2018 19:23:31.682 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/apache-tomcat-8.5.32/webapps/MakeYouListen]
+13-Aug-2018 19:23:33.143 INFO [www.yunteng0923.cn-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Aug-2018 19:23:33.147 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log No Spring WebApplicationInitializer types detected on classpath
+13-Aug-2018 19:23:33.197 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+13-Aug-2018 19:23:33.197 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+13-Aug-2018 19:23:33.286 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Mon Aug 13 19:23:33 CST 2018]; root of context hierarchy
+13-Aug-2018 19:23:33.338 INFO [www.yunteng0923.cn-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+13-Aug-2018 19:23:33.925 INFO [www.yunteng0923.cn-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13-Aug-2018 19:23:34.272 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+13-Aug-2018 19:23:34.382 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+13-Aug-2018 19:23:34.383 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+13-Aug-2018 19:23:34.384 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:34.385 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+13-Aug-2018 19:23:34.386 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+13-Aug-2018 19:23:34.386 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:34.386 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+13-Aug-2018 19:23:34.387 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+13-Aug-2018 19:23:34.388 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:34.389 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:34.389 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:34.390 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+13-Aug-2018 19:23:34.390 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+13-Aug-2018 19:23:34.390 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:34.391 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13-Aug-2018 19:23:34.510 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 13 19:23:33 CST 2018]; root of context hierarchy
+13-Aug-2018 19:23:34.584 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Mon Aug 13 19:23:33 CST 2018]; root of context hierarchy
+13-Aug-2018 19:23:34.720 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1523 ms
+13-Aug-2018 19:23:34.741 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'MakeYouListen'
+13-Aug-2018 19:23:34.741 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'MakeYouListen': initialization started
+13-Aug-2018 19:23:34.743 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.context.support.XmlWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Mon Aug 13 19:23:34 CST 2018]; parent: Root WebApplicationContext
+13-Aug-2018 19:23:34.744 INFO [www.yunteng0923.cn-startStop-1] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions Loading XML bean definitions from ServletContext resource [/WEB-INF/MakeYouListen-servlet.xml]
+13-Aug-2018 19:23:34.843 INFO [www.yunteng0923.cn-startStop-1] org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init> JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13-Aug-2018 19:23:34.960 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+13-Aug-2018 19:23:35.032 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/dati/insert],methods=[GET],produces=[application/json;charset=utf-8]}" onto public void com.lly.front.controller.DatiController.insertintoPerson(java.lang.String,java.lang.String,java.lang.String)
+13-Aug-2018 19:23:35.033 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/dati/show],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.DatiController.showAllDati()
+13-Aug-2018 19:23:35.033 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/loveComment/addLoveComment],methods=[GET]}" onto public void com.lly.front.controller.LoveCommentController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:35.034 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/loveComment/allLoveComment],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveCommentController.selectLoveCommentByLno1(java.lang.String)
+13-Aug-2018 19:23:35.034 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/lovewall/showAllLove],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.LoveWallController.showAllTheme()
+13-Aug-2018 19:23:35.035 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/lovewall/publish],methods=[POST]}" onto public void com.lly.front.controller.LoveWallController.UserLogIn111(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:35.035 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/notice/allNotices],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.NoticeController.allMessage()
+13-Aug-2018 19:23:35.036 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/theme/showAllTheme],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.ThemeController.showAllTheme()
+13-Aug-2018 19:23:35.037 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/user/login],methods=[GET]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserLogIn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:35.037 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/user/login/alterUserInfo],methods=[GET]}" onto public void com.lly.front.controller.UserInfoController.UserAlter(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:35.037 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/user/showUserDetail],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.UserInfoController.UserShowDetail(java.lang.String) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:35.051 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/selectVoiceByVid],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.selectVoiceByVid(java.lang.String)
+13-Aug-2018 19:23:35.052 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/allMessage],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.lly.front.controller.VoiceController.allMessage(java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+13-Aug-2018 19:23:35.052 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/addVoiceText],methods=[GET]}" onto public void com.lly.front.controller.VoiceController.addVoicetext(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.UnsupportedEncodingException
+13-Aug-2018 19:23:35.052 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.register Mapped "{[/voice/addVoice],methods=[POST]}" onto public void com.lly.front.controller.VoiceController.addVoice(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13-Aug-2018 19:23:35.106 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Mon Aug 13 19:23:34 CST 2018]; parent: Root WebApplicationContext
+13-Aug-2018 19:23:35.126 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache Looking for @ControllerAdvice: WebApplicationContext for namespace 'MakeYouListen-servlet': startup date [Mon Aug 13 19:23:34 CST 2018]; parent: Root WebApplicationContext
+13-Aug-2018 19:23:35.269 INFO [www.yunteng0923.cn-startStop-1] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'MakeYouListen': initialization completed in 528 ms
+13-Aug-2018 19:23:35.270 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/apache-tomcat-8.5.32/webapps/MakeYouListen] has finished in [3,588] ms
+13-Aug-2018 19:23:35.270 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/apache-tomcat-8.5.32/webapps/ROOT]
+13-Aug-2018 19:23:35.292 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/apache-tomcat-8.5.32/webapps/ROOT] has finished in [21] ms
+13-Aug-2018 19:23:35.292 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/apache-tomcat-8.5.32/webapps/docs]
+13-Aug-2018 19:23:35.299 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/apache-tomcat-8.5.32/webapps/docs] has finished in [7] ms
+13-Aug-2018 19:23:35.299 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/apache-tomcat-8.5.32/webapps/manager]
+13-Aug-2018 19:23:35.324 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/apache-tomcat-8.5.32/webapps/manager] has finished in [25] ms
+13-Aug-2018 19:23:35.324 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/root/apache-tomcat-8.5.32/webapps/examples]
+13-Aug-2018 19:23:35.509 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+13-Aug-2018 19:23:35.510 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+13-Aug-2018 19:23:35.526 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@24ae5f9b')
+13-Aug-2018 19:23:35.531 INFO [www.yunteng0923.cn-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/root/apache-tomcat-8.5.32/webapps/examples] has finished in [206] ms
+13-Aug-2018 19:23:35.556 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-jsse-nio-443"]
+13-Aug-2018 19:23:35.563 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+13-Aug-2018 19:23:35.567 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 27986 ms
+13-Aug-2018 19:24:45.220 INFO [https-jsse-nio-443-exec-10] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcherServlet'

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.datiproject.dao.DatiMapper">
+
+    <select id="selectByGk" resultType="com.example.datiproject.entity.Timu">
+      select * from timu where guanka=#{guanka}
+    </select>
+
+    <select id="showAllTimu" resultType="com.example.datiproject.entity.Timu">
+        select * from timu
+    </select>
+
+    <insert id="addTimu" parameterType="com.example.datiproject.entity.Timu">
+        insert into timu(tcontent,ta,tb,tc,td,guanka,ans,isError)values (#{tcontent},#{ta},#{tb},#{tc},#{td},#{guanka},#{ans},#{isError})
+    </insert>
+
+    <delete id="deleteTimu" parameterType="String">
+        delete from timu where tno=#{tno}
+    </delete>
+    <update id="updateError" parameterType="String">
+        update timu set isError="1" where tno=#{tno}
+    </update>
+
+    <select id="selectByTno" resultType="com.example.datiproject.entity.Timu">
+      select * from timu where isError="1" order by tno desc
+    </select>
+
+    <update id="yichuError" parameterType="String">
+        update timu set isError="0" where tno=#{tno}
+    </update>
+
+
+
+
+
+    <!--<update id="upCD"  >-->
+        <!--update u_check set late =#{cd} where fid=#{fid}-->
+    <!--</update>-->
+
+    <!--<update id="upZT">-->
+        <!--update u_check set befor =#{zt} where fid=#{fid}-->
+    <!--</update>-->
+
+
+</mapper>

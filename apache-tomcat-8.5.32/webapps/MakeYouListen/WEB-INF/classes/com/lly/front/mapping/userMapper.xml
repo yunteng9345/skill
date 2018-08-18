@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的 
+	例如namespace="me.gacl.mapping.userMapper"就是me.gacl.mapping(包名)+userMapper(userMapper.xml文件去除后缀) -->
+<mapper namespace="com.lly.front.mapping.userMapper">
+	<!-- 插入用户信息 -->
+	<insert id="insertUserInfo">
+		insert into user_table(openid,uname,usex,uregtime,uicon,session_key)
+		values(#{openid},#{uname},#{usex},#{uregtime},#{uicon},#{session_key})
+	</insert>
+
+
+	<!--根据openid查询是否存在用户 -->
+	<select id="selectUserByOpenid" resultType="com.lly.front.model.User">
+		select * from user_table where openid=#{openid}
+	</select>
+
+	<!-- 修改用户信息 -->
+	<update id="alterUserInfo" parameterType="com.lly.front.model.User">
+		update user_table
+		set user_table.uname= #{uname},
+		user_table.usex= #{usex},
+		user_table.uage = #{uage},
+		user_table.uschool =#{uschool},
+		user_table.uacademy = #{uacademy}
+		where user_table.openid = #{openid};
+	</update>
+	
+
+
+</mapper>

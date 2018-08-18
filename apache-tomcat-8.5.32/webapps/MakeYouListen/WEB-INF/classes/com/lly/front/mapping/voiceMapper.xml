@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lly.front.mapping.voiceMapper">
+   
+    <!-- 插入录音信息 -->
+	<insert id="insertVoice">
+		insert into voice_table(openid,vtext,publishtime,vaddr,vtime,tid)
+		values(#{openid},#{vtext},#{publishtime},#{vaddr},#{vtime},#{tid})
+	</insert>
+    <!--显示录音信息  -->
+    <select id="selectVoiceByTid" resultType="com.lly.front.model.Voice">   	
+    select * 
+	from voice_table v,user_table u
+	where v.openid=u.openid and v.tid=#{tid}	
+	order by v.vid desc
+	</select>
+	<!--显示录音信息  -->
+    <select id="selectVoiceByVid" resultType="com.lly.front.model.Voice">	
+    select * 
+	from voice_table 
+	where vid=#{vid}  
+		    <!--   select * from voice_table where tid=#{tid}   -->
+	</select>
+</mapper>

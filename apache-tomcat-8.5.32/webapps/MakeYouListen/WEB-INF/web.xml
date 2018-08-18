@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MakeYouListen</display-name>
+     
+     <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jsp</url-pattern>
+    </servlet-mapping>
+    
+  <servlet>
+      <servlet-name>MakeYouListen</servlet-name>
+      <servlet-class>
+         org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>MakeYouListen</servlet-name>
+      <url-pattern>/</url-pattern>
+   </servlet-mapping>
+   
+   
+  <!-- Spring监听器  --> 
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>/WEB-INF/MakeYouListen-servlet.xml</param-value>
+</context-param>
+
+<listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+    
+ 
+ 
+    
+<!-- 配置请求过滤器，编码格式设为UTF-8，避免中文乱码-->
+    <filter>
+      <filter-name>springUtf8Encoding</filter-name>
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+       <init-param>
+          <param-name>encoding</param-name>
+          <param-value>UTF-8</param-value>
+       </init-param>
+       <init-param>
+          <param-name>forceEncoding</param-name>
+          <param-value>true</param-value>
+       </init-param>
+    </filter>
+</web-app>

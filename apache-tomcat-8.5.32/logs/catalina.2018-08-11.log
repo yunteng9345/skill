@@ -1,0 +1,5 @@
+11-Aug-2018 14:41:11.683 INFO [https-jsse-nio-443-exec-3] org.apache.catalina.core.ApplicationContext.log Initializing Spring FrameworkServlet 'dispatcherServlet'
+11-Aug-2018 22:18:09.035 SEVERE [ajp-nio-8009-exec-2] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+11-Aug-2018 22:18:09.127 SEVERE [ajp-nio-8009-exec-3] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [5635]
+11-Aug-2018 22:18:09.227 SEVERE [ajp-nio-8009-exec-4] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [32926]
+11-Aug-2018 22:18:09.323 SEVERE [ajp-nio-8009-exec-5] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
