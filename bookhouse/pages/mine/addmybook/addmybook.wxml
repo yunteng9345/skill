@@ -1,0 +1,39 @@
+<!--pages/mine/addmybook/addmybook.wxml-->
+
+<!-- <view class='layout_vertical'>
+<text>pages/mine/addmybook/addmybook.wxml</text>
+<image src='{{image}}' style="width: 100px; height: 150px" mode='scaleToFill'> </image>
+<text>{{title}}</text>
+
+<view>
+<text>{{author}}</text></view>
+</view> -->
+<view id="adduser">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view>书名</view>
+    <view>
+      <input type="text" name="title" value='{{title}}' ></input>
+    </view>
+
+    <view>作者</view>
+    <view>
+      <input type="text" name="author" value='{{author}}' />
+    </view>
+
+    <view>
+      <view>选择所在地</view>
+    </view>
+
+    <view>漂流记寄语</view>
+    <view>
+      <input type="text" name="username" placeholder="点此输入" />
+    </view>
+
+
+    <view>
+      <button formType="submit">提交</button>
+    </view>
+  </form>
+
+  </view>

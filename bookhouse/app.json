@@ -1,0 +1,52 @@
+{
+  "pages": [
+
+    "pages/booksea/booksea",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/groupbook/groupbook",
+    "pages/mine/mine",
+    "pages/bookseadetail/bookseadetail",
+    "pages/groupbookdetail/groupbookdetail",
+    "pages/mine/message/message",
+    "pages/mine/mybook/mybook",
+    "pages/mine/mybookbar/mybookbar",
+    "pages/mine/about/about",
+    "pages/mine/mybookbar/creatbookbar/createbookbar",
+    "pages/mine/addmybook/addmybook",
+    "pages/bookseadetail/transpond/transpond"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新漂流书屋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "grey",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/groupbook/groupbook",
+        "iconPath": "images/sj.png",
+        "selectedIconPath": "images/sj.png",
+        "text": "群书"
+      },
+      {
+        "pagePath": "pages/booksea/booksea",
+        "iconPath": "images/sc.png",
+        "selectedIconPath": "images/sc.png",
+        "text": "书海"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

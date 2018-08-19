@@ -1,0 +1,3 @@
+<!--pages/mine/mybookbar/mybookbar.wxml-->
+<text></text>
+<button bindtap='creat'>创建书吧</button>

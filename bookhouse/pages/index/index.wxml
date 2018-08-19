@@ -1,0 +1,26 @@
+<!-- index.wxml
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+   <open-data type="userAvatarUrl"></open-data>    //获取用户头像直接显示在小程序中
+    <open-data type="userNickName" lang="zh_CN"></open-data> 
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="authorize-warning" hidden="{{!isShowAhturoizeWarning}}">
+    <view class="box">
+      <view class="title">警告</view>
+      <view class="content">拒绝授权后，将无法通知您。。。。。点击“取消”拒绝提醒，点击“确定”再次尝试授权？</view>
+      <view class="footer">
+        <button bindtap="cancelAuthroize">取消</button>
+        <button open-type="getUserInfo" bindgetuserinfo="getAuthorize">确定</button>
+      </view>
+    </view>
+  </view> 
