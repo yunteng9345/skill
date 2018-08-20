@@ -10,11 +10,23 @@
 </view> -->
 <view id="adduser">
   <form bindsubmit="formSubmit" bindreset="formReset">
+<view>
+<image src='{{image}}'  name="image" style="width: 100px; height: 150px" mode='scaleToFill'> </image>
+</view>
+
 
     <view>书名</view>
+
     <view>
       <input type="text" name="title" value='{{title}}' ></input>
     </view>
+
+    <view>ISBN:{{isbn}}</view>
+    <!-- <view>
+    <input type="text" name="isbn" value='{{isbn}}'></input>
+    </view> -->
+
+    
 
     <view>作者</view>
     <view>
@@ -22,17 +34,18 @@
     </view>
 
     <view>
-      <view>选择所在地</view>
+      <button bindtap='selectAdd'>选择地址</button>
     </view>
 
     <view>漂流记寄语</view>
     <view>
-      <input type="text" name="username" placeholder="点此输入" />
+      <input type="text" name="sendword" placeholder="点此输入" />
     </view>
 
 
     <view>
-      <button formType="submit">提交</button>
+      <button formType="submit" 
+      >提交</button>
     </view>
   </form>
 
