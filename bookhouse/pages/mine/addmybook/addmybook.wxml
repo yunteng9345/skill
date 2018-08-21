@@ -11,6 +11,7 @@
 <view id="adduser">
   <form bindsubmit="formSubmit" bindreset="formReset">
 <view>
+
 <image src='{{image}}'  name="image" style="width: 100px; height: 150px" mode='scaleToFill'> </image>
 </view>
 
@@ -39,7 +40,7 @@
 
     <view>漂流记寄语</view>
     <view>
-      <input type="text" name="sendword" placeholder="点此输入" />
+      <input type="text" name="sendword" placeholder="点此输入" value='漂流瓶寄语' />
     </view>
 
 
@@ -47,6 +48,7 @@
       <button formType="submit" 
       >提交</button>
     </view>
+    
   </form>
 
   </view>

@@ -6,39 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    booklist: [
-
-      {
-        "bookname": "计算机网络（第7版）",
-        "bookurl": "https://img1.doubanio.com/view/subject/m/public/s29300537.jpg",
-        "bookauthor": "谢希仁"
-      },
-      {
-        "bookname": "编译原理学习指导",
-        "bookurl": "https://img3.doubanio.com/view/subject/m/public/s8976735.jpg",
-        "bookauthor": "莫礼平"
-      },
-      {
-        "bookname": "计算机网络（第7版）",
-        "bookurl": "https://img1.doubanio.com/view/subject/m/public/s29300537.jpg",
-        "bookauthor": "谢希仁"
-      },
-      {
-        "bookname": "编译原理学习指导",
-        "bookurl": "https://img3.doubanio.com/view/subject/m/public/s8976735.jpg",
-        "bookauthor": "莫礼平"
-      }, {
-        "bookname": "计算机网络（第7版）",
-        "bookurl": "https://img1.doubanio.com/view/subject/m/public/s29300537.jpg",
-        "bookauthor": "谢希仁"
-      },
-      {
-        "bookname": "编译原理学习指导",
-        "bookurl": "https://img3.doubanio.com/view/subject/m/public/s8976735.jpg",
-        "bookauthor": "莫礼平"
-      }
-    
-    ]
+    booklists:""
    
   },
 
@@ -46,7 +14,31 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    
+    //将用户信息存到服务器
+    var that = this;
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+
+        wx.request({
+          method: 'GET',
+          url: 'http://localhost:8080/kq/json/allBook',
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+
+          success: function (res) {
+
+            //console.log(res.data.booklist)
+            that.setData({
+              booklists: res.data.booklist
+            })
+
+          }
+        })
+
+      },
+    })
 
   },
  
@@ -62,6 +54,32 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    //将用户信息存到服务器
+    var that = this;
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+
+        wx.request({
+          method: 'GET',
+          url: 'http://localhost:8080/kq/json/allBook',
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+
+          success: function (res) {
+
+            //console.log(res.data.booklist)
+            that.setData({
+              booklists: res.data.booklist
+            })
+
+          }
+        })
+
+      },
+    })
+
   
   },
 

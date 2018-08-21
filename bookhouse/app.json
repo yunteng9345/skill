@@ -1,6 +1,5 @@
 {
   "pages": [
-
     "pages/booksea/booksea",
     "pages/index/index",
     "pages/logs/logs",
@@ -14,8 +13,8 @@
     "pages/mine/about/about",
     "pages/mine/mybookbar/creatbookbar/createbookbar",
     "pages/mine/addmybook/addmybook",
-    "pages/bookseadetail/transpond/transpond"
-    
+    "pages/bookseadetail/transpond/transpond",
+    "pages/mine/mybookdetail/mybookdetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,2 +1,12 @@
 <!--pages/mine/mybook/mybook.wxml-->
-<text>pages/mine/mybook/mybook.wxml</text>
+<scroll-view class=''>
+
+<navigator class='looks-view' wx:for="{{booklists}}" wx:key="index" wx:for-item="item"
+url="../mybookdetail/mybookdetail?image={{item.bookpic}}&title={{item.booktitle}}&author={{bookauthor}}">
+    <image src='{{item.bookpic}}'style="width: 50px; height: 70px" mode='scaleToFill' ></image>
+   {{item.booktitle}}
+</navigator>
+<button bindtap='ret'>返回【我的】</button>
+
+</scroll-view>
+

@@ -1,8 +1,9 @@
 <scroll-view class=''>
 
-<navigator class='looks-view' wx:for="{{booklist}}" wx:key="index" wx:for-item="item"
-url="../bookseadetail/bookseadetail?image={{item.bookurl}}&title={{item.bookname}}&author={{bookauthor}}">
-    <image src='{{item.bookurl}}'style="width: 100px; height: 150px" mode='scaleToFill' ></image>
+<navigator class='looks-view' wx:for="{{booklists}}" wx:key="index" wx:for-item="item"
+url="../bookseadetail/bookseadetail?image={{item.bookpic}}&title={{item.booktitle}}&author={{bookauthor}}">
+    <image src='{{item.bookpic}}'style="width: 100px; height: 150px" mode='scaleToFill' ></image>
 </navigator>
 
-</scroll-view>
+
+</scroll-view> 
