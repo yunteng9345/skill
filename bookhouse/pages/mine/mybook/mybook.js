@@ -5,14 +5,100 @@ Page({
    * 页面的初始数据
    */
   data: {
-    booklists:""
+    booklists:"",
+    // image: "",
+    // title: "",
+    // author: "",
+    // bookopenid: "",
+    // hiddenmodalput: true,
+    // content: "",
+    // isbn: ""
   },
+  // contentInput: function (e) {
+  //   var that = this
+  //   that.setData({
+  //     content: e.detail.value
+  //   })
+  // },
+  /*
+  预约书籍
+  */
+  // appoint: function () {
+  //   var that = this
+  //   this.setData({
+  //     hiddenmodalput: !this.data.hiddenmodalput
+  //   })
+
+  // },
+  //取消按钮
+  // cancel: function () {
+  //   this.setData({
+  //     hiddenmodalput: true
+  //   });
+    //console.log("cancel")
+  //},
+  //确认
+  // confirm: function () {
+  //   var that = this
+  //   //var content = e.detail.value
+  //   // console.log(that.data.content)
+  //   this.setData({
+  //     hiddenmodalput: true
+  //   })
+    // wx.getStorage({
+    //   key: 'openid',
+    //   success: function (res) {
+    //     wx.request({
+    //       method: 'GET',
+    //       url: 'http://localhost:8080/kq/json/appoint',
+    //       header: { //请求头
+    //         "Content-Type": "applciation/json"
+    //       },
+    //       data: {
+    //         "openid1": res.data,
+    //         "openid2": that.data.bookopenid,
+    //         "content": that.data.content,
+    //         "isbn": that.data.isbn,
+    //         "flag": "1"
+
+    //       },
+    //       success: function (res) {
+    //         wx.showModal({
+    //           title: '预约成功',
+    //           content: '请到我的私信中查看具体预约信息！',
+    //           success: function (res) {
+    //             if (res.confirm) {
+    //               console.log('用户点击确定')
+    //             } else if (res.cancel) {
+    //               console.log('用户点击取消')
+    //             }
+    //           }
+    //         })
+    //         //console.log(res.data.booklist)
+    //         // that.setData({
+    //         //   booklists: res.data.booklist
+    //         // })
+
+    //       }
+    //     })
+
+    //   },
+    // })
+
+  // },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    // var that = this;
+    // that.setData({
+    //   image: options.image,
+    //   title: options.title,
+    //   author: options.author,
+    //   bookopenid: options.bookopenid,
+    //   isbn: options.isbn
+    // })
   },
 
   /**

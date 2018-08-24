@@ -1,2 +1,7 @@
 <!--pages/mine/message/message.wxml-->
-<text>pages/mine/message/message.wxml</text>
+<view>
+<navigator class='looks-view' wx:for="{{chatlist}}" wx:key="index" wx:for-item="item"
+url=""> 
+   {{item.content}}
+</navigator>
+</view>

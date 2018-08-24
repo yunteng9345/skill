@@ -1,9 +1,13 @@
-<scroll-view class=''>
+<!-- <scroll-view class='layout_horizontal'> -->
+<view class='layout_horizontal'>
+
 
 <navigator class='looks-view' wx:for="{{booklists}}" wx:key="index" wx:for-item="item"
-url="../bookseadetail/bookseadetail?image={{item.bookpic}}&title={{item.booktitle}}&author={{bookauthor}}">
-    <image src='{{item.bookpic}}'style="width: 100px; height: 150px" mode='scaleToFill' ></image>
+url="../bookseadetail/bookseadetail?image={{item.bookpic}}&title={{item.booktitle}}&author={{bookauthor}}&bookopenid={{item.openid}}&isbn={{item.isbn}}">
+
+    <image src='{{item.bookpic}}'style="width: 100px; height: 140px" mode='scaleToFill' ></image>
+
 </navigator>
 
-
-</scroll-view> 
+<!-- </scroll-view>  -->
+</view>

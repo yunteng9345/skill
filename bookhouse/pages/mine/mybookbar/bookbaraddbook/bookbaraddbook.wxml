@@ -1,0 +1,14 @@
+<!--pages/mine/mybookbar/bookbaraddbook/bookbaraddbook.wxml-->
+
+<view class='layout_horizontal'>
+
+<button bindtap='addbook' >扫码添加书籍</button>
+<navigator class='looks-view' wx:for="{{lists}}" wx:key="index" wx:for-item="item"
+url="../../../bookseadetail/bookseadetail?image={{item.bookpic}}&title={{item.booktitle}}&author={{bookauthor}}&isbn={{item.isbn}}&bookopenid={{item.openid}}">
+    <image src='{{item.bookpic}}'style="width: 80px; height: 100px" mode='scaleToFill' ></image>
+</navigator>
+
+<!-- </scroll-view>  -->
+
+</view>
+

@@ -11,10 +11,11 @@
     "pages/mine/mybook/mybook",
     "pages/mine/mybookbar/mybookbar",
     "pages/mine/about/about",
-    "pages/mine/mybookbar/creatbookbar/createbookbar",
+    "pages/mine/mybookbar/createbookbar/createbookbar",
     "pages/mine/addmybook/addmybook",
     "pages/bookseadetail/transpond/transpond",
-    "pages/mine/mybookdetail/mybookdetail"
+    "pages/mine/mybookdetail/mybookdetail",
+    "pages/mine/mybookbar/bookbaraddbook/bookbaraddbook"
   ],
   "window": {
     "backgroundTextStyle": "light",

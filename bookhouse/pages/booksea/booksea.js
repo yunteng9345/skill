@@ -23,7 +23,7 @@ Page({
         wx.request({
           method: 'GET',
           url: 'http://localhost:8080/kq/json/allBook',
-          header: { //请求头
+         header: { //请求头
             "Content-Type": "applciation/json"
           },
 

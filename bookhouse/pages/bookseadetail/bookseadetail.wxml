@@ -1,5 +1,4 @@
 <!--pages/bookseadetail/bookseadetail.wxml-->
-<text>pages/bookseadetail/bookseadetail.wxml</text>
 <view class='layout_vertical'>
 <image src='{{image}}' style="width: 100px; height: 150px" mode='scaleToFill'></image>
 <text>{{title}}</text>
@@ -9,8 +8,19 @@
 
 <view class='layout_horizontal'>
 <button type='primary' data-bookpic='{{image}}' bindtap='transpond'>转发</button>
-<button type='primary'>预约</button>
+<button type='primary' bindtap='appoint' data-bookopenid='{{bookopenid}}' >预约</button>
 <button type='primary'>小纸条</button>
 </view>
+
+
+<!-- appoint -->
+<view class="container" class="zn-uploadimg">
+<!-- <button type="primary"bindtap="modalinput">modal有输入框</button> -->
+</view>
+<modal id="modal" hidden="{{hiddenmodalput}}" title="预约私信" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+<textarea  bindinput="contentInput"   name="content" placeholder="点此输入私信内容，请告诉持书人你的位置及其联系方式，以便约定取书地点。"  />
+<!-- </textarea> -->
+
+</modal>
 
 </view>

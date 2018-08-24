@@ -9,7 +9,8 @@ Page({
     //用户个人信息
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    num:""
 
   },
 
@@ -117,7 +118,7 @@ Page({
           success: function(res) {
             wx.navigateTo({
               url: './addmybook/addmybook?image=' + res.data.image + '&title=' + res.data.title +
-                '&author=' + res.data.author[0],
+                '&author=' + res.data.author[0] +'&bookbar='+"无书吧",
             })
             console.log(res.data.image)
             console.log(res.data.title)
@@ -139,6 +140,32 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
+    var that=this
+    wx.getStorage({
+      key: 'openid',
+      success: function(res) {
+        wx.request({
+          method: 'GET',
+          url: 'http://localhost:8080/kq/json/selectAppoint',
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+          data: {
+            "openid2": res.data
+          },
+          success: function (res) {
+
+            //console.log(res.data.appointlist.length)
+              that.setData({
+                num: res.data.appointlist.length
+              })
+
+          }
+        })
+
+      },
+    })
+    
 
   },
 

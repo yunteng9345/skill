@@ -1,0 +1,32 @@
+
+
+<view id="adduser">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+<view>
+
+    <view>名称</view>
+
+    <view>
+      <input type="text" name="name"  placeholder="点此输入" ></input>
+    </view>
+
+    <view>地址</view>
+    <view>
+      <input type="text" name="addr"  placeholder="点此输入"  />
+    </view>
+
+    <view>描述</view>
+    <view>
+      <input type="text" name="miaoshu" placeholder="点此输入"   />
+    </view>
+
+
+    <view>
+      <button formType="submit" 
+      >提交</button>
+    </view>
+    
+    </view>
+  </form>
+
+  </view>

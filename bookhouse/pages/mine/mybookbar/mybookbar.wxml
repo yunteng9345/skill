@@ -1,3 +1,14 @@
 <!--pages/mine/mybookbar/mybookbar.wxml-->
-<text></text>
+
+<scroll-view class=''>
+
+<navigator class='looks-view' wx:for="{{bookbarlists}}" wx:key="index" wx:for-item="item"
+url="./bookbaraddbook/bookbaraddbook?name={{item.name}}"> 
+   {{item.name}}
+</navigator>
+
+
+</scroll-view>
+
 <button bindtap='creat'>创建书吧</button>
+<button bindtap='ret'>返回【我的】</button>

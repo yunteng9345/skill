@@ -1,20 +1,16 @@
-/* pages/booksea/booksea.wxss */
+/* pages/mine/mybookbar/creatbookbar/createbookbar.wxss */
+/* pages/mine/addmybook/addmybook.wxss */
+.layout_vertical{
 
-.layout_vertical {
-  height: 100rpx;
   display: flex;
   /*row 横向  column 列表  */
   flex-direction: column;
-  flex-wrap:wrap;
 }
 
 /*横向布局  */
-
-.layout_horizontal {
+.layout_horizontal{
   height: 100rpx;
   display: flex;
   /*row 横向  column 列表  */
   flex-direction: row;
-  flex-wrap:wrap;
 }
-

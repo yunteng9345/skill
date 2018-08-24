@@ -10,3 +10,5 @@ url="../mybookdetail/mybookdetail?image={{item.bookpic}}&title={{item.booktitle}
 
 </scroll-view>
 
+
+

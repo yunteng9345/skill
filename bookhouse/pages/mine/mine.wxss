@@ -1,5 +1,10 @@
 /**index.wxss**/
-
+.ziti{
+  color:white;
+  font-size:larger;
+  background-color:red;
+  border-radius:15px
+}
 .head {
   display: flex;
   flex-direction: column;

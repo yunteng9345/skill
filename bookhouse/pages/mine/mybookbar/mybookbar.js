@@ -5,18 +5,51 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    bookbarlists:""
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+
+        wx.request({
+          method: 'GET',
+          url: 'http://localhost:8080/kq/json/allBookBarByOpenid',
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+          data:{
+            "openid":res.data
+          },
+          success: function (res) {
+
+            //console.log(res.data.booklist)
+            that.setData({
+              bookbarlists: res.data.bookbarlist
+            })
+
+          }
+        })
+
+      },
+    })
+
   
   },
   creat(){
     wx.navigateTo({
-      url: '/creatbookbar/creatbookbar',
+      url: './createbookbar/createbookbar?',
+    })
+  },
+  ret() {
+    wx.navigateBack({
+
     })
   },
   /**
@@ -30,7 +63,33 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    var that = this;
+    wx.getStorage({
+      key: 'openid',
+      success: function (res) {
+
+        wx.request({
+          method: 'GET',
+          url: 'http://localhost:8080/kq/json/allBookBarByOpenid',
+          header: { //请求头
+            "Content-Type": "applciation/json"
+          },
+          data:{
+            "openid":res.data
+          },
+
+          success: function (res) {
+
+            //console.log(res.data.booklist)
+            that.setData({
+              bookbarlists: res.data.bookbarlist
+            })
+
+          }
+        })
+
+      },
+    })
   },
 
   /**
