@@ -11,7 +11,7 @@
 
 <view class='layout_horizontal'>
 <button type='primary' data-bookpic='{{image}}' bindtap='transpond'>转发</button>
-<!-- <button type='primary'>预约</button> -->
+<button type='primary' bindtap='jiaojie'>交接</button>
 <button type='primary'>小纸条</button>
 </view>
 

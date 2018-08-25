@@ -22,7 +22,7 @@ App({
             },
 
             success: function (res) {
-              console.log(res.data.openid)
+              //console.log(res.data.openid)
               wx.setStorage({
                 key: "openid",
                 data: res.data.openid

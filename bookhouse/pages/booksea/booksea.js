@@ -14,6 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
+    //console.log("onload")
     //将用户信息存到服务器
     var that = this;
     wx.getStorage({
@@ -54,6 +55,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+   // console.log("onshow")
     //将用户信息存到服务器
     var that = this;
     wx.getStorage({

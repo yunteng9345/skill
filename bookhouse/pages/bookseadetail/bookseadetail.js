@@ -51,7 +51,7 @@ Page({
         wx.request({
           method: 'GET',
           url: 'http://localhost:8080/kq/json/appoint',
-          header: { //请求头
+          header: { 
             "Content-Type": "applciation/json"
           },
           data: {

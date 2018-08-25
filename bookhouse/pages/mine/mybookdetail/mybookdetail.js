@@ -23,6 +23,9 @@ Page({
     })
 
   },
+  jiaojie(){
+      
+  },
   transpond(e) {
     var image = e.currentTarget.dataset.bookpic
     wx.navigateTo({
