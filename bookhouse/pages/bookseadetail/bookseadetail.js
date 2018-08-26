@@ -11,7 +11,8 @@ Page({
     bookopenid: "",
     hiddenmodalput: true,
     content: "",
-    isbn:""
+    isbn:"",
+    commentlist:""
 
   },
   contentInput: function(e) {
@@ -100,6 +101,26 @@ Page({
       isbn:options.isbn
     })
 
+
+    var that = this
+    wx.request({
+      method: 'GET',
+      url: 'http://localhost:8080/kq/json/showAllComment',
+      header: { //请求头
+        "Content-Type": "applciation/json"
+      },
+      data: {
+        isbn: that.data.isbn
+      },
+      success: function (res) {
+        that.setData({
+          commentlist: res.data.allComment
+        })
+
+      }
+    })
+
+
   },
   transpond(e) {
     var image = e.currentTarget.dataset.bookpic
@@ -120,6 +141,23 @@ Page({
    */
   onShow: function() {
 
+    var that = this
+    wx.request({
+      method: 'GET',
+      url: 'http://localhost:8080/kq/json/showAllComment',
+      header: { //请求头
+        "Content-Type": "applciation/json"
+      },
+      data: {
+        isbn: that.data.isbn
+      },
+      success: function (res) {
+        that.setData({
+          commentlist: res.data.allComment
+        })
+
+      }
+    })
   },
 
   /**

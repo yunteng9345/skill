@@ -13,3 +13,23 @@
   /*row 横向  column 列表  */
   flex-direction: row;
 }
+
+/* 
+底部固定发送消息
+ */
+.dialog{
+   display: flex;direction: column;height: 40px;
+   position: fixed;bottom: 0;width: 100%;background: #FFA500;
+}
+.dialog image{
+   position: absolute;bottom: 3px;left: 3%;width: 10%;height:30px;
+}
+.record{
+ position: absolute;bottom: 0;left: 16%;width: 55%;height:30px;line-height: 30px;
+}
+.dialog input{
+  border:1px solid gray;background: white;border-radius: 8px;
+}
+.submit{
+ position: absolute;bottom: 0;left: 75%;width: 25%;height:30px;line-height: 30px;
+}

@@ -1,7 +1,4 @@
 <!--pages/mine/mybookdetail/mybookdetail.wxml-->
-<text>pages/mine/mybookdetail/mybookdetail.wxml</text>
-<!--pages/bookseadetail/bookseadetail.wxml-->
-<text>pages/bookseadetail/bookseadetail.wxml</text>
 <view class='layout_vertical'>
 <image src='{{image}}' style="width: 100px; height: 150px" mode='scaleToFill'></image>
 <text>{{title}}</text>
@@ -16,3 +13,34 @@
 </view>
 
 </view>
+
+
+<view class="container" class="zn-uploadimg">
+<!-- <button type="primary"bindtap="modalinput">modal有输入框</button> -->
+
+<modal id="modal" hidden="{{hiddenmodalput}}" title="扫码交接图书" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+<!-- <textarea  bindinput="contentInput"   name="content" placeholder="点此输入私信内容，请告诉持书人你的位置及其联系方式，以便约定取书地点。"  />
+</textarea> -->
+<image src='../../../images/code.png' style="width: 230px; height: 210px" mode='scaleToFill'></image>
+</modal>
+
+</view>
+
+
+<block wx:for="{{commentlist}}" wx:for-item="item"  wx:key >
+  <view class="commment">
+   <image src='{{item.uicon}}' style="width: 50px; height: 50px" mode='scaleToFill'  ></image>
+      <text class='time'>{{item.uname}}:{{item.comment}}</text>   
+    </view>
+ 
+  </block>
+
+
+
+
+ <!-- 底部固定发送消息 -->
+  <view class="dialog" >
+    <image src="../../../images/sb.png" ></image>
+    <input type='text' class='record' bindinput='txtinput'   value='{{comment}}'></input>
+    <button plain class='submit' bindtap='submit' size='mini'  >评论</button> 
+  </view>

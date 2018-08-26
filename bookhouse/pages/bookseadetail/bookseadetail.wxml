@@ -13,6 +13,18 @@
 </view>
 
 
+
+<block wx:for="{{commentlist}}" wx:for-item="item"  wx:key >
+  <view class="commment">
+  <image src='{{item.uicon}}' style="width: 50px; height: 50px" mode='scaleToFill'  ></image>
+      <text class='time'>{{item.uname}}:{{item.comment}}</text>   
+    </view>
+ 
+  </block>
+
+
+
+
 <!-- appoint -->
 <view class="container" class="zn-uploadimg">
 <!-- <button type="primary"bindtap="modalinput">modal有输入框</button> -->
