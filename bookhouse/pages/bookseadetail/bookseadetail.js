@@ -123,10 +123,13 @@ Page({
 
   },
   transpond(e) {
+
     var image = e.currentTarget.dataset.bookpic
+    var that=this
     wx.navigateTo({
-      url: './transpond/transpond?image=' + image,
+      url: './transpond/transpond?image=' + image+"&title="+that.data.title,
     })
+    
   },
 
   /**

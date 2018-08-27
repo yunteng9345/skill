@@ -5,13 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    "profess": [
+      {
+        "pid": "1",
+        "pname": "群组一"
+      },
+      {
+        "pid": "2",
+        "pname": "书吧2",
+       
+      },
+      {
+        "pid": "3",
+        "pname": "群组三",
+       
+      },
+      
+      
+    ],
+    list:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this
+    that.setData({
+      list: that.data.profess
+    })
   
   },
   
@@ -61,14 +83,46 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function (res) {
+    wx.showShareMenu({
+      withShareTicket:true
+    })
     
-      if (res.from === 'button') {
-        console.log(res.target)
+    var that = this
+    // console.log(that.data.content)
+    if (res.from === 'button') {
+      console.log("来自页面内转发按钮");
+      // console.log(res.target);
+    }
+    else {
+      console.log("来自右上角转发菜单")
+    }
+    return {
+      title: that.data.content,
+      path: '../groupbookdetail/groupbookdetail',
+
+      success: (res) => {
+        // 转发成功  
+        var shareTickets = res.shareTickets;
+        var shareTicket = shareTickets;  
+        console.log("转发成功", res);
+        wx.getShareInfo({
+          shareTicket: shareTicket,
+          success: function (res) {
+           // console.log('success');
+            console.log(res);
+           
+            wx.showToast({
+              title: '转发成功',
+              duration: 5000
+            })
+          }
+        })
+
+      },
+      fail: (res) => {
+        console.log("转发失败", res);
       }
-      return {
-        title: '群书架，快来共享你的闲置书籍吧',
-        path: '../groupbook/groupbook'
-      }
+    }
     }
   
 })

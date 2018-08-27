@@ -1,10 +1,10 @@
 <!--pages/bookseadetail/transpond/transpond.wxml-->
-<text>pages/bookseadetail/transpond/transpond.wxml</text>
+
 <view>
 
 <image src='{{image}}' style="width: 100px; height: 150px" mode='scaleToFill'></image>
 <!-- <input name="userName" placeholder="点此输入转发标题" 
     bindinput="userNameInput" ></input> -->
-
+<input bindinput='inputcontent' placeholder='点此输入转发标题' value='{{content}}'></input>
 <button open-type="share" >转发</button>
 </view>

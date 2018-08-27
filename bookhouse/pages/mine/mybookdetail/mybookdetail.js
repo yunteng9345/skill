@@ -124,6 +124,14 @@ Page({
     })
 
   },
+  transpond(e) {
+
+    var that = this
+    wx.navigateTo({
+      url: '../../bookseadetail/transpond/transpond?image=' + that.data.image + "&title=" + that.data.title,
+    })
+
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

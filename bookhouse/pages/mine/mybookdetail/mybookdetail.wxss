@@ -1,5 +1,9 @@
 /* pages/mine/mybookdetail/mybookdetail.wxss */
 /* pages/bookseadetail/bookseadetail.wxss */
+
+.pic{
+  border-radius:25px
+}
 .layout_vertical{
 
   display: flex;

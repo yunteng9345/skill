@@ -12,4 +12,6 @@
   /*row 横向  column 列表  */
   flex-direction: row;
 }
-
+.pic{
+  border-radius:25px
+}

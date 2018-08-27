@@ -1,7 +1,13 @@
 <!--pages/groupbook/groupbook.wxml-->
 
 <view>
-<text>群书架列表</text>
+
+<navigator class='looks-view' wx:for="{{list}}" wx:key="index" wx:for-item="item"
+url="../mine/mybookbar/bookbaraddbook/bookbaraddbook?name={{item.pname}}">
+
+   {{item.pname}}
+
+</navigator>
 <button  open-type="share"  type='primary'>转发到群聊，生成群书架</button>
 
 </view>

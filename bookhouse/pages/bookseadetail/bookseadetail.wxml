@@ -16,7 +16,7 @@
 
 <block wx:for="{{commentlist}}" wx:for-item="item"  wx:key >
   <view class="commment">
-  <image src='{{item.uicon}}' style="width: 50px; height: 50px" mode='scaleToFill'  ></image>
+  <image src='{{item.uicon}}' class='pic' style="width: 50px; height: 50px" mode='scaleToFill'  ></image>
       <text class='time'>{{item.uname}}:{{item.comment}}</text>   
     </view>
  
