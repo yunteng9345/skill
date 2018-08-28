@@ -1,1 +1,4 @@
 /* pages/mine/message/message.wxss */
+.looks-view{
+  margin-bottom: 5px;
+}

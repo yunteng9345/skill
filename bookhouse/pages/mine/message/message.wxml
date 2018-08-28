@@ -2,6 +2,8 @@
 <view>
 <navigator class='looks-view' wx:for="{{chatlist}}" wx:key="index" wx:for-item="item"
 url=""> 
-   {{item.content}}
+<image src='{{item.uicon}}' style="width: 50px; height: 50px" mode='scaleToFill'></image>
+ {{item.uname}}:申请预约《{{item.booktitle}}》
+ 预约内容为：{{item.content}}
 </navigator>
 </view>

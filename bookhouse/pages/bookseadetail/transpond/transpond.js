@@ -80,6 +80,11 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function(res) {
+
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+    
     var that = this
    // console.log(that.data.content)
     if (res.from === 'button') {
