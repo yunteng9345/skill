@@ -3,18 +3,29 @@
 .layout_vertical {
   height: 100rpx;
   display: flex;
-  /*row 横向  column 列表  */
   flex-direction: column;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 /*横向布局  */
 
 .layout_horizontal {
-  height: 100rpx;
+  height: 200px;
   display: flex;
-  /*row 横向  column 列表  */
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
+.n {
+  flex-wrap: wrap;
+  /* /height: 00px; */
+  display: flex;
+  flex-direction: column;
+  font: 2px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #f5f5f5;
+}
+
+.ziti {
+}

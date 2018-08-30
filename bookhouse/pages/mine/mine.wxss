@@ -3,7 +3,7 @@
   color:white;
   font-size:larger;
   background-color:red;
-  border-radius:15px
+  border-radius:30px
 }
 .head {
   display: flex;

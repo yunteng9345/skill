@@ -2,12 +2,14 @@
 <view class='layout_horizontal'>
 
 
-<navigator class='looks-view' wx:for="{{booklists}}" wx:key="index" wx:for-item="item"
+
+<navigator class='n' wx:for="{{booklists}}" wx:key="index" wx:for-item="item"
 url="../bookseadetail/bookseadetail?image={{item.bookpic}}&title={{item.booktitle}}&author={{bookauthor}}&bookopenid={{item.openid}}&isbn={{item.isbn}}">
-
     <image src='{{item.bookpic}}'style="width: 100px; height: 140px" mode='scaleToFill' ></image>
-
+<!-- <text class='ziti'>{{item.booktitle}}</text> -->
 </navigator>
+
+
 
 <!-- </scroll-view>  -->
 </view>

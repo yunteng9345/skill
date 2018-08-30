@@ -1,4 +1,16 @@
 /* pages/mine/message/message.wxss */
 .looks-view{
   margin-bottom: 5px;
+  border-inline-end:5ch;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:#F5F5F5;
+  border-radius: 15px;
+  border-width:medium;
+  border-color: darkgray;
+
+}
+.o{
+  border-radius:30px
 }
