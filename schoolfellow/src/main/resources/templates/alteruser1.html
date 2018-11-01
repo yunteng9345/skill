@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>吉首大学60周年校庆报到信息录入系统</title>
+    <style type="text/css">
+
+        html{
+            background-color:white;
+        }
+        .im{
+            padding-left: 550px;
+        }
+
+        .Content-Main {border:2px solid red;
+            max-width: 500px;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-shadow: 1px 1px 1px #444;
+            color: white;
+            background:#F45B4B;
+            border-radius: 4px;
+        }
+
+        .Content-Main h1 {
+            padding: 8px 0px 40px 10px;
+            display: block;
+            border-bottom: 1px solid #444;
+        }
+
+        .text1 {
+            margin-left: 3px;
+        }
+
+        .Content-Main label {
+            margin: 0px 0px 5px;
+            display: block;
+        }
+
+        .fileInputContainer {
+            height: 99px;
+            width: 300px;
+            margin: 20px 20px 20px 20px;
+            border: none;
+            background: url(../static/images/xy.jpg);
+
+            overflow: hidden;
+            position: relative;
+        }
+
+        .fileInput {
+            height: 106px;
+            border: none;
+            font-size: 300px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .Content-Main label > span {
+            width: 20%;
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .Main-sex {
+            padding-right: 13px;
+            padding-bottom: 13px;
+            font-weight: bold;
+            line-height: 4px;
+        }
+
+        .Main-sex input[type=checkbox] {
+            /*margin-top: 6px;*/
+            /*vertical-align: middle;*/
+        }
+
+        .Content-Main input[type="text"], .Content-Main input[type="email"], .Content-Main textarea {
+            height: 25px;
+            width: 70%;
+            line-height: 15px;
+            padding: 5px 0px 5px 5px;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            border: none;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            outline: 0 none;
+            background: white;
+            color: #525252;
+        }
+
+        .Content-Main textarea {
+            height: 100px;
+            width: 70%;
+            padding: 5px 0px 0px 5px;
+        }
+
+        .Content-Main .button {
+            padding: 8px 24px 8px 28px;
+            margin-left: 80%;
+            margin-bottom: 8px;
+            border: none;
+            border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #FFE477;
+            box-shadow: 1px 1px 1px #3D3D3D;
+            /*-moz-box-shadow: 1px 1px 1px #3D3D3D;*/
+            /*-webkit-box-shadow: 1px 1px 1px #3D3D3D;*/
+            /*color: #585858;*/
+            background: #f6ff0a;
+        }
+
+        .Content-Main .button:hover {
+            /*color: #333;*/
+            /*background-color: #EBEBEB;*/
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="im">
+    <img  src="/js/images/xy.jpg" height="200" width="50%" alt="" />
+</div>
+
+<div class="Content-Main">
+
+    <form th:action="@{/xy/alterUserByUno1}" th:object="${user}" method="POST" class="form-userInfo">
+
+        <p>
+            <!--<img src="/jishou/images/xy.jpg" height="300" width="500" alt="" />-->
+            <label>
+                <span>姓名:</span>
+                <input type="text"  th:value="*{uname}" th:field="*{uname}" />
+            </label>
+            <label>
+                <span>单位:</span>
+                <input type="text"  th:value="*{ucompany}" th:field="*{ucompany}"/>
+            </label>
+            <label>
+                <span>职务:</span>
+                <input type="text"  th:value="*{uclass}" th:field="*{uclass}"/>
+            </label>
+            <label>
+                <span>住宿房间:</span>
+                <input type="text"  th:value="*{uroom}" th:field="*{uroom}"/>
+            </label>
+
+            <!--<label>-->
+                <!--<span>交通及住宿:</span>-->
+                <!--<input type="text" th:value="*{jt}" th:field="*{jt}"/>-->
+            <!--</label>-->
+
+            <!--<input type="hidden" th:value="*{utime}"  th:field="*{utime}"/>-->
+
+            <!--<label>-->
+                <!--<span>离校时间:</span>-->
+                <!--<input type="text" th:value="*{ltime}" th:field="*{ltime}"/>-->
+            <!--</label>-->
+
+            <label>
+                <span>联系电话:</span>
+                <input type="text"  th:value="*{uphone}" th:field="*{uphone}"/>
+            </label>
+
+            <label>
+                <span>备注:</span>
+                <input type="text"  th:value="*{uremark}" th:field="*{uremark}"/>
+            </label>
+
+            <!--<label>-->
+                <!--<span>勾选参加的活动:</span>-->
+                <!--<input name="hd" type="checkbox" value="1" />1、沈从文学术论坛<br>-->
+                <!--<input name="hd" type="checkbox" value="2" />2、沈从文雕像揭幕<br>-->
+
+
+            <!--</label>-->
+            <!--<label>-->
+                <!--<span>-</span>-->
+                <!--<input name="hd" type="checkbox" value="3" />3、校地合作签约<br>-->
+                <!--<input name="hd" type="checkbox" value="4" />4、60周年校庆晚会<br>-->
+            <!--</label>-->
+
+            <!--<label>-->
+                <!--<span>-</span>-->
+                <!--<input name="hd" type="checkbox" value="5" />5、民族教育成果展<br>-->
+                <!--<input name="hd" type="checkbox" value="6" />6、参观文化场馆-->
+            <!--</label>-->
+
+
+
+            <label>
+                <span>勾选参加的活动:</span>
+                <!--<p th:text="${user.getHd1()}"></p>-->
+                <input th:if="${user.getHd1()}!=''"  name="hd" type="checkbox" value="1" checked="checked" />
+                <input th:if="${user.getHd1()}==''"  name="hd" type="checkbox" value="1"  />
+                1、沈从文学术论坛<br>
+
+
+                <input th:if="${user.getHd2()}!=''" name="hd" type="checkbox" value="2" checked="checked" />
+                <input th:if="${user.getHd2()}==''" name="hd" type="checkbox" value="2" />
+                2、沈从文雕像揭幕<br>
+            </label>
+            <label>
+                <span>-</span>
+
+                <input th:if="${user.getHd3()}!=''" name="hd" type="checkbox" value="3"  checked="checked" />
+                <input th:if="${user.getHd3()}==''" name="hd" type="checkbox" value="3" />
+                3、校地合作签约<br>
+
+
+                <input th:if="${user.getHd4()}!=''" name="hd" type="checkbox" value="4" checked="checked" />
+                <input th:if="${user.getHd4()}==''" name="hd" type="checkbox" value="4" />
+                4、60周年校庆晚会<br>
+            </label>
+
+            <label>
+                <span>-</span>
+
+                <input th:if="${user.getHd5()}!=''"  name="hd" type="checkbox" value="5" checked="checked" />
+                <input th:if="${user.getHd5()}==''"  name="hd" type="checkbox" value="5" />
+                5、民族教育成果展<br>
+
+
+                <input th:if="${user.getHd6()}!=''"   name="hd" type="checkbox" value="6" checked="checked" />
+                <input th:if="${user.getHd6()}==''"  name="hd" type="checkbox" value="6" />
+                6、参观文化场馆
+            </label>
+
+
+
+
+
+            <label> <input type="submit" class="button" value="签到"></label>
+    </form>
+</div>
+
+<!--<form th:action="@{/xy/alterUserByUno}" th:object="${user}" method="POST">-->
+
+<!--姓名：<input type="text"   th:field="*{uname}" /><br>-->
+<!--单位：<input type="text"    th:field="*{ucompany}" /> <br>-->
+<!--班级：<input type="text"  th:field="*{uclass}" />  <br>-->
+<!--房间：<input type="text"    th:field="*{uroom}" />  <br>-->
+<!--电话：<input type="text"   th:field="*{uphone}" />  <br>-->
+<!--备注：<input type="text"   th:field="*{uremark}" />  <br>-->
+
+<!--<input type="submit" value="修改" />-->
+
+
+<!--</form>-->
+
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>吉首大学60周年校庆报到信息录入系统</title>
+</head>
+<!-- Javascript goes in the document HEAD -->
+<script type="text/javascript">
+    function altRows(id){
+        if(document.getElementsByTagName){
+
+            var table = document.getElementById(id);
+            var rows = table.getElementsByTagName("tr");
+
+            for(i = 0; i < rows.length; i++){
+                if(i % 2 == 0){
+                    rows[i].className = "evenrowcolor";
+                }else{
+                    rows[i].className = "oddrowcolor";
+                }
+            }
+        }
+    }
+
+    window.onload=function(){
+        altRows('alternatecolor');
+    }
+
+    function del() {
+        var msg = "您真的确定要取消签到吗？\n\n请确认！";
+        if (confirm(msg)==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+</script>
+
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+    /*h1{color:#a9c6c9;}*/
+    .js{
+        padding-top: 500px;
+    }
+    table.altrowstable {
+        font-family: verdana,arial,sans-serif;
+        font-size:16px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #a9c6c9;
+        border-collapse: collapse;
+    }
+    table.altrowstable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #a9c6c9;
+    }
+    table.altrowstable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #a9c6c9;
+    }
+    .oddrowcolor{
+        background-color:#d4e3e5;
+    }
+    .evenrowcolor{
+        background-color:#c3dde0;
+    }
+
+</style>
+<body>
+<h1>所有校友信息（管理员界面）</h1>
+ <a th:href="@{/xy/addUser1}">新增校友信息</a> &emsp;&emsp; <a th:href="@{/xy/addjs}">角色管理</a> &emsp;&emsp;  <a th:href="@{/xy/excel}">表格导出</a>
+&emsp;&emsp;<a th:href="@{/xy/zhuxiao}">注销</a>&emsp;&emsp;<a th:href="@{/xy/reflush}">刷新</a>
+<table  class="altrowstable" id="alternatecolor">
+    <tr>
+
+        <th>序号</th>
+        <th>单位名称</th>
+        <th>姓名</th>
+        <th>职务</th>
+        <th>手机</th>
+
+        <th>酒店安排</th>
+        <th>房号</th>
+        <th>参加活动</th>
+        <th>注册时间</th>
+
+        <!--<th>交通及住宿</th>-->
+        <th>备注</th>
+        <!--<th>离校时间</th>-->
+        <th>操作</th>
+        <!--<th>离校</th>-->
+    </tr>
+
+    <tr th:each="u,bb : ${alluser}" >
+
+        <td bgcolor="#F0FFF0" th:if="${u.utime}==null" th:text="${bb.count}">序号</td>
+        <td th:if="${u.utime}!=null"th:text="${bb.count}">序号</td>
+
+        <td style="width:150px"  bgcolor="#F0FFF0" th:if="${u.utime}==null"th:text="${u.ucompany}">单位名称</td>
+        <td style="width:150px" th:if="${u.utime}!=null" th:text="${u.ucompany}">单位名称</td>
+
+        <td style="width:100px" bgcolor="#F0FFF0" th:if="${u.utime}==null" th:text="${u.uname}">姓名</td>
+        <td style="width:100px" th:if="${u.utime}!=null" th:text="${u.uname}">姓名</td>
+
+        <td style="width:100px" bgcolor="#F0FFF0" th:if="${u.utime}==null" th:text="${u.uclass}">职务</td>
+        <td style="width:100px" th:if="${u.utime}!=null" th:text="${u.uclass}">职务</td>
+
+
+        <td  style="width:100px" bgcolor="#F0FFF0" th:if="${u.utime}==null" th:text="${u.uphone}">手机</td>
+        <td  style="width:100px" th:if="${u.utime}!=null"th:text="${u.uphone}">手机</td>
+
+
+
+        <td bgcolor="#F0FFF0" th:if="${u.utime}==null"  th:text="${u.urname}">酒店安排</td>
+        <td th:if="${u.utime}!=null" th:text="${u.urname}">酒店安排</td>
+
+
+        <td bgcolor="#F0FFF0" th:if="${u.utime}==null"  th:text="${u.uroom}">房号</td>
+        <td th:if="${u.utime}!=null" th:text="${u.uroom}">房号</td>
+
+        <td bgcolor="#F0FFF0" th:if="${u.utime}==null" >
+            <p th:text="${u.hd1}"></p>
+            <p th:text="${u.hd2}"></p>
+            <p th:text="${u.hd3}"></p>
+            <p th:text="${u.hd4}"></p>
+            <p th:text="${u.hd5}"></p>
+            <p th:text="${u.hd6}"></p>
+        </td>
+
+        <td th:if="${u.utime}!=null">
+            <p th:text="${u.hd1}"></p>
+            <p th:text="${u.hd2}"></p>
+            <p th:text="${u.hd3}"></p>
+            <p th:text="${u.hd4}"></p>
+            <p th:text="${u.hd5}"></p>
+            <p th:text="${u.hd6}"></p>
+
+        </td>
+
+        <td bgcolor="#F0FFF0" th:if="${u.utime}==null"  th:text="${#dates.format(u.utime, 'yyyy-MM-dd HH:mm')}">注册时间</td>
+        <td th:if="${u.utime}!=null" th:text="${#dates.format(u.utime, 'yyyy-MM-dd HH:mm')}">注册时间</td>
+        <!--<td bgcolor="#F0FFF0" th:if="${u.utime}==null"  th:text="${u.jt}">交通及住宿</td>-->
+        <!--<td th:if="${u.utime}!=null" th:text="${u.jt}">交通及住宿</td>-->
+
+
+
+
+        <td style="width:100px"  bgcolor="#F0FFF0" th:if="${u.utime}==null"  th:text="${u.uremark}">备注</td>
+        <td style="width:100px"  th:if="${u.utime}!=null" th:text="${u.uremark}">备注</td>
+
+        <!--<td bgcolor="#F0FFF0" th:if="${u.utime}==null"  th:text="${u.ltime}">离校时间</td>-->
+        <!--<td th:if="${u.utime}!=null" th:text="${u.ltime}">离校时间</td>-->
+
+        <!--<td><a th:href="@{/xy/deleteUserByUno(id=${u.uno})}" onclick="javascript:return del();">删除</a></td>-->
+        <!--<td bgcolor="#F0FFF0" th:if="${u.utime}==null" ><a th:href="@{/xy/quxiao(id=${u.uno})}"  onclick="javascript:return del();" >取消签到</a></td>-->
+        <!--<td th:if="${u.utime}!=null" ><a th:href="@{/xy/quxiao(id=${u.uno})}"  onclick="javascript:return del();" >取消签到</a></td>-->
+
+        <td bgcolor="#F0FFF0" th:if="${u.utime}==null" ><a th:href="@{/xy/alterUser1(id=${u.uno},name=${u.uname},company=${u.ucompany},uclass=${u.uclass},phone=${u.uphone},
+            room=${u.uroom},remark=${u.uremark},ltime=${u.ltime},hd1=${u.hd1},hd2=${u.hd2},hd3=${u.hd3},hd4=${u.hd4},hd5=${u.hd5},hd6=${u.hd6})}">签到</a></td>
+
+        <td th:if="${u.utime}!=null"><a th:href="@{/xy/alterUser1(id=${u.uno},name=${u.uname},company=${u.ucompany},uclass=${u.uclass},phone=${u.uphone},
+            room=${u.uroom},remark=${u.uremark},ltime=${u.ltime},hd1=${u.hd1},hd2=${u.hd2},hd3=${u.hd3},hd4=${u.hd4},hd5=${u.hd5},hd6=${u.hd6})}">签到</a></td>
+
+        <!--<td bgcolor="#F0FFF0" th:if="${u.utime}==null" ><a th:href="@{/xy/lixiao(id=${u.uno})}"  onclick="javascript:return del();" >离校</a></td>-->
+        <!--<td th:if="${u.utime}!=null" ><a th:href="@{/xy/lixiao(id=${u.uno})}"  onclick="javascript:return del();" >离校</a></td>-->
+
+
+    </tr>
+
+</table>
+
+
+<!--<div class="js">-->
+    <!--<h1>角色添加</h1>-->
+    <!--<table  class="altrowstable" id="alternatecolo">-->
+        <!--<tr>-->
+            <!--<th>序号</th>-->
+            <!--<th>部门名称</th>-->
+            <!--<th>账号</th>-->
+            <!--<th>密码</th>-->
+            <!--<th>删除</th>-->
+
+
+        <!--</tr>-->
+
+        <!--<tr th:each="role,aa : ${allrole}" >-->
+            <!--<td th:text="${aa.count}">部门名称</td>-->
+            <!--<td th:text="${role.rname}">部门名称</td>-->
+            <!--<td th:text="${role.rid}">账号</td>-->
+            <!--<td th:text="${role.rpw}">密码</td>-->
+            <!--<td><a th:href="@{/xy/delete(id=${role.rno})}">删除</a></td>-->
+
+
+        <!--</tr>-->
+
+    <!--</table>-->
+
+
+
+    <!--<form th:action="@{/xy/addRole}" th:object="${role}" method="POST">-->
+        <!--部门名称：<input type="text"  th:field="*{rname}" />  <br>-->
+        <!--管理员账号 <input type="text"  th:field="*{rid}" /><br>-->
+        <!--管理员密码<input type="password"  th:field="*{rpw}" /><br>-->
+        <!--<input type="submit" value="添加" />-->
+
+    <!--</form>-->
+
+
+</div>
+
+</body>
+</html>

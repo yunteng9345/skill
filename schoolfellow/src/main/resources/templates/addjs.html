@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>吉首大学60周年校庆报到信息录入系统</title>
+</head>
+<!-- Javascript goes in the document HEAD -->
+<script type="text/javascript">
+
+    function del() {
+        var msg = "您真的确定要删除吗？\n\n请确认！";
+        if (confirm(msg)==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
+    function altRows(id){
+        if(document.getElementsByTagName){
+
+            var table = document.getElementById(id);
+            var rows = table.getElementsByTagName("tr");
+
+            for(i = 0; i < rows.length; i++){
+                if(i % 2 == 0){
+                    rows[i].className = "evenrowcolor";
+                }else{
+                    rows[i].className = "oddrowcolor";
+                }
+            }
+        }
+    }
+
+    window.onload=function(){
+        altRows('alternatecolor');
+    }
+</script>
+
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+
+    table.altrowstable {
+        font-family: verdana,arial,sans-serif;
+        font-size:16px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #a9c6c9;
+        border-collapse: collapse;
+    }
+    table.altrowstable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #a9c6c9;
+    }
+    table.altrowstable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #a9c6c9;
+    }
+    .oddrowcolor{
+        background-color:#d4e3e5;
+    }
+    .evenrowcolor{
+        background-color:#c3dde0;
+    }
+</style>
+<body>
+
+
+<div class="js">
+    <h1>角色管理</h1>
+
+    <a th:href="@{/xy/returnGL}">返回管理页面</a>
+    <table  class="altrowstable" id="alternatecolor">
+        <tr>
+            <th>序号</th>
+            <th>部门名称</th>
+            <th>账号</th>
+            <th>密码</th>
+            <th>删除</th>
+
+
+        </tr>
+
+        <tr th:each="role,aa : ${allrole}" >
+            <td th:text="${aa.count}">部门名称</td>
+            <td th:text="${role.rname}">部门名称</td>
+            <td th:text="${role.rid}">账号</td>
+            <td th:text="${role.rpw}">密码</td>
+            <td><a th:href="@{/xy/delete(id=${role.rno})}" onclick="javascript:return del();">删除</a></td>
+
+
+        </tr>
+
+    </table>
+
+
+
+    <form th:action="@{/xy/addRole}" th:object="${role}" method="POST">
+        部门名称：<input type="text"  th:field="*{rname}" />  <br>
+        管理员账号 <input type="text"  th:field="*{rid}" /><br>
+        管理员密码<input type="text"  th:field="*{rpw}" /><br>
+        <input type="submit" value="添加" />
+
+    </form>
+
+
+
+</body>
+</html>
