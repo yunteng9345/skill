@@ -47,15 +47,15 @@ Page({
       id = this.data.id || app._user.we.info.id;
     return {
       title: name + '的课表',
-      desc: 'We重邮 - 课表查询',
+      desc: 'We吉大 - 课表查询',
       path: '/pages/core/kb/kb?id=' + id + '&name=' + name
     };
   },
   onLoad: function (options) {
-    var _this = this;
-    app.loginLoad(function () {
-      _this.loginHandler.call(_this, options);
-    });
+    // var _this = this;
+    // app.loginLoad(function () {
+    //   _this.loginHandler.call(_this, options);
+    // });
   },
   //让分享时自动登录
   loginHandler: function (options) {
@@ -81,24 +81,63 @@ Page({
   },
   onShow: function () {
     var _this = this;
+    // if(!app.cache.kb){
+    //   console.log("有缓存")
+      
+    //   _this.setData({
+    //     lessons: app.cache.kb
+    //   })
+    // }
+    // else{
+      console.log("无缓存")
+    console.log(app.cache.openid)
+      //app.saveCache('kb',app.stu.courses);
+      console.log(app.cache.kb)
+      wx.request({
+        method: 'GET',
+        url: app._server + '/UserApi/kb',
+        data: {
+          openid: app.cache.openid,       
+        },
+        success: function (res) {
+          console.log(res.data.courses)
+         // _this.saveCache('kb',res.data);
+          _this.setData({
+            lessons: res.data.courses
+          })
+
+        },
+        fail: function (res) {
+
+        },
+        complete: function () {
+          //wx.hideNavigationBarLoading();
+        }
+      });
+   // }
+    
+    
+
+    
+
     // 计算timeline时针位置
-    function parseMinute(dateStr) { return dateStr.split(':')[0] * 60 + parseInt(dateStr.split(':')[1]); }
-    function compareDate(dateStr1, dateStr2) {
-      return parseMinute(dateStr1) <= parseMinute(dateStr2);
-    }
-    var nowTime = app.util.formatTime(new Date(), 'h:m');
-    _this.data._time.forEach(function (e, i) {
-      if (compareDate(e.begin, nowTime) && compareDate(nowTime, e.end)) {
-        _this.setData({
-          timelineTop: Math.round(e.beginTop + (e.endTop - e.beginTop) * (parseMinute(nowTime) - parseMinute(e.begin)) / 100)
-        });
-      };
-    });
-    //设置滚动至当前时间附近，如果周末为设置left为其最大值102
-    var nowWeek = new Date().getDay();
-    _this.setData({
-      'scroll.left': ((nowWeek === 6 || nowWeek === 0) && !this.data.is_vacation) ? 102 : 0
-    });
+    // function parseMinute(dateStr) { return dateStr.split(':')[0] * 60 + parseInt(dateStr.split(':')[1]); }
+    // function compareDate(dateStr1, dateStr2) {
+    //   return parseMinute(dateStr1) <= parseMinute(dateStr2);
+    // }
+    // var nowTime = app.util.formatTime(new Date(), 'h:m');
+    // _this.data._time.forEach(function (e, i) {
+    //   if (compareDate(e.begin, nowTime) && compareDate(nowTime, e.end)) {
+    //     _this.setData({
+    //       // timelineTop: Math.round(e.beginTop + (e.endTop - e.beginTop) * (parseMinute(nowTime) - parseMinute(e.begin)) / 100)
+    //     });
+    //   };
+    // });
+    // //设置滚动至当前时间附近，如果周末为设置left为其最大值102
+    // var nowWeek = new Date().getDay();
+    // _this.setData({
+    //   'scroll.left': ((nowWeek === 6 || nowWeek === 0) && !this.data.is_vacation) ? 102 : 0
+    // });
   },
   onReady: function () {
     var _this = this;
@@ -116,68 +155,68 @@ Page({
     //   'scroll.left': e.detail.scrollLeft
     // });
   },
-  showDetail: function (e) {
-    // 点击课程卡片后执行
-    var _this = this;
-    var week = _this.data.week;
-    var dataset = e.currentTarget.dataset;
-    var lessons = _this.data.lessons[dataset.day][dataset.wid];
-    var targetI = 0;
-    lessons[dataset.cid].target = true;
-    if (week != '*') {
-      lessons = lessons.filter(function (e) {
-        return e.weeks.indexOf(parseInt(week)) !== -1;
-      });
-    }
-    lessons.map(function (e, i) {
-      if (lessons.length === 1) {
-        e.left = 0;
-      } else {
-        //笼罩层卡片防止超出课表区域
-        //周一~周四0~3:n lessons.length>=2*n+1时，设置left0为-n*128，否则设置为-60*(lessons.length-1)；
-        //周日~周五6~4:n lessons.length>=2*(6-n)+1时，设置left0为-(7-n-lessons.length)*128，否则设置为-60*(lessons.length-1)；
-        var left0 = -60 * (lessons.length - 1);
-        if (dataset.day <= 3 && lessons.length >= 2 * dataset.day + 1) {
-          left0 = -dataset.day * 128;
-        } else if (dataset.day >= 4 && lessons.length >= 2 * (6 - dataset.day) + 1) {
-          left0 = -(7 - dataset.day - lessons.length) * 128;
-        }
-        e.left = left0 + 128 * i;
-      }
-      return e;
-    });
-    lessons.forEach(function (e, i) {
-      if (e.target) {
-        targetI = i;
-        lessons[i].target = false;
-      }
-    });
-    if (!lessons.length) { return false; }
-    _this.setData({
-      targetX: dataset.day * 129 + 35 + 8,
-      targetY: dataset.wid * 206 + Math.floor(dataset.wid / 2) * 4 + 60 + 8,
-      targetDay: dataset.day,
-      targetWid: dataset.wid,
-      targetI: targetI,
-      targetLessons: lessons,
-      targetLen: lessons.length,
-      blur: true
-    });
-  },
-  hideDetail: function () {
-    // 点击遮罩层时触发，取消主体部分的模糊，清空target
-    this.setData({
-      blur: false,
-      targetLessons: [],
-      targetX: 0,
-      targetY: 0,
-      targetDay: 0,
-      targetWid: 0,
-      targetI: 0,
-      targetLen: 0
-    });
+  // showDetail: function (e) {
+  //   // 点击课程卡片后执行
+  //   var _this = this;
+  //   var week = _this.data.week;
+  //   var dataset = e.currentTarget.dataset;
+  //   var lessons = _this.data.lessons[dataset.day][dataset.wid];
+  //   var targetI = 0;
+  //   lessons[dataset.cid].target = true;
+  //   if (week != '*') {
+  //     lessons = lessons.filter(function (e) {
+  //       return e.weeks.indexOf(parseInt(week)) !== -1;
+  //     });
+  //   }
+  //   lessons.map(function (e, i) {
+  //     if (lessons.length === 1) {
+  //       e.left = 0;
+  //     } else {
+  //       //笼罩层卡片防止超出课表区域
+  //       //周一~周四0~3:n lessons.length>=2*n+1时，设置left0为-n*128，否则设置为-60*(lessons.length-1)；
+  //       //周日~周五6~4:n lessons.length>=2*(6-n)+1时，设置left0为-(7-n-lessons.length)*128，否则设置为-60*(lessons.length-1)；
+  //       var left0 = -60 * (lessons.length - 1);
+  //       if (dataset.day <= 3 && lessons.length >= 2 * dataset.day + 1) {
+  //         left0 = -dataset.day * 128;
+  //       } else if (dataset.day >= 4 && lessons.length >= 2 * (6 - dataset.day) + 1) {
+  //         left0 = -(7 - dataset.day - lessons.length) * 128;
+  //       }
+  //       e.left = left0 + 128 * i;
+  //     }
+  //     return e;
+  //   });
+  //   lessons.forEach(function (e, i) {
+  //     if (e.target) {
+  //       targetI = i;
+  //       lessons[i].target = false;
+  //     }
+  //   });
+  //   if (!lessons.length) { return false; }
+  //   _this.setData({
+  //     targetX: dataset.day * 129 + 35 + 8,
+  //     targetY: dataset.wid * 206 + Math.floor(dataset.wid / 2) * 4 + 60 + 8,
+  //     targetDay: dataset.day,
+  //     targetWid: dataset.wid,
+  //     targetI: targetI,
+  //     targetLessons: lessons,
+  //     targetLen: lessons.length,
+  //     blur: true
+  //   });
+  // },
+  // hideDetail: function () {
+  //   // 点击遮罩层时触发，取消主体部分的模糊，清空target
+  //   this.setData({
+  //     blur: false,
+  //     targetLessons: [],
+  //     targetX: 0,
+  //     targetY: 0,
+  //     targetDay: 0,
+  //     targetWid: 0,
+  //     targetI: 0,
+  //     targetLen: 0
+  //   });
 
-  },
+  // },
   infoCardTap: function (e) {
     var dataset = e.currentTarget.dataset;
     if (this.data.targetI == dataset.index) { return false; }
@@ -192,18 +231,18 @@ Page({
       targetI: current
     });
   },
-  chooseView: function () {
-    console.log("resfsh")
-    // if (this.data.is_vacation === 'T') {
+  // chooseView: function () {
+  //   console.log("resfsh")
+  //   if (this.data.is_vacation === 'T') {
 
-    // } else {
-    //   app.showLoadToast('切换视图中', 500);
-    //   //切换视图(周/学期) *表示学期视图
-    //   this.setData({
-    //     week: this.data.week == '*' ? this.data.toweek : '*'
-    //   });
-    // }
-  },
+  //   } else {
+  //     app.showLoadToast('切换视图中', 500);
+  //     //切换视图(周/学期) *表示学期视图
+  //     this.setData({
+  //       week: this.data.week == '*' ? this.data.toweek : '*'
+  //     });
+  //   }
+  // },
   returnCurrent: function () {
     //返回本周
     this.setData({
@@ -270,13 +309,13 @@ Page({
     };
     if (app._user.teacher && !_this.data.name) { data.type = 'teacher'; }
     //判断并读取缓存
-    if (app.cache.kb && !_this.data.name) { kbRender(app.cache.kb); }
+    if (app.cache.kb && !_this.data.name) { kbRender(app.stu.courses); }
     //课表渲染
     function kbRender(_data) {
       var colors = ['red', 'green', 'purple', 'yellow'];
       var i, ilen, j, jlen, k, klen;
       var colorsDic = {};
-      var _lessons = _data.lessons;
+      var _lessons = _data;
       var _colors = colors.slice(0); //暂存一次都未用过的颜色
       var is_vacation = _data.is_vacation;
 
@@ -357,13 +396,13 @@ Page({
         return idates;
       });
       _this.setData({
-        today: today,
-        week: is_vacation === "T" ? '*' : week,
-        toweek: week,
-        lessons: lessons,
-        dates: dates,
-        remind: '',
-        is_vacation: is_vacation
+        // today: today,
+        // week: is_vacation === "T" ? '*' : week,
+        // toweek: week,
+         lessons: _lessons,
+        // dates: dates,
+        // remind: '',
+        // is_vacation: is_vacation
       });
     }
     wx.showNavigationBarLoading();

@@ -11,6 +11,7 @@
 
         <!-- 主体 -->
         <view class="main-box {{blur?'main-box-active':''}}">
+       
             <!-- 左边课数，34节和78节marginBottom为12rpx，其他均为8rpx，课程卡片与这相同 -->
             <view class="kb-num-ctn blur-area {{blur?'blur kb-num-ctn-hide':''}}">
                 <view class="kb-mon kb-date">
@@ -39,7 +40,7 @@
                             <text>周{{_days[index]}}</text>
                         </view>
                     </block> -->
-                    <block wx>
+                    <block >
                         <view wx:for="{{_days}}" wx:key="*this" class="kb-title-item">
                             <text>周{{item}}</text>
                         </view>
@@ -69,30 +70,30 @@
                     <!-- 每一列为一组 -->
                     <view class="kb-cards-column" wx:for="{{lessons}}" wx:key="{{day}}" wx:for-item="day_lesson" wx:for-index="day">
                         <!-- today 0周一,1周二 -->
-                        <block wx:if="{{(today===day) && (toweek == week)}}">
+                        <!-- <block wx:if="{{(today===day) && (toweek == week)}}">
                             <view class="kb-bg" style="background:-webkit-gradient(linear,left top,left bottom,from(#eff7ff),color-stop({{(timelineTop+4)/1260}}, #8cc4ff),to(#eff7ff));"></view>
                             <view class="kb-timeline" style="display:block;top:{{timelineTop}}rpx"></view>
-                        </block>
+                        </block> -->
                         <!-- 循环当天的的6节课 -->
-                        <view class="kb-card {{wid%2==0?'mg-8':'mg-12'}}" wx:for="{{day_lesson}}" wx:key="{{wid}}" wx:for-index="wid">
+                        <view class="kb-card {{wid%2==0?'mg-8':'mg-12'}}" wx:for="{{day_lesson}}" wx:for-item="cards" wx:key="{{wid}}" wx:for-index="wid">
                             <!-- 循环重叠课 -->
-                            <block wx:for="{{day_lesson[wid]}}" wx:key="{{cid}}" wx:for-item="cards" wx:for-index="cid">
+                            <!-- <block wx:for="{{day_lesson[wid]}}" wx:key="{{cid}}" wx:for-item="cards" wx:for-index="cid"> -->
                                 <!-- 循环周数，与当前周相同或当前周为*时显示 -->
-                                <view style="height:{{cards.number==2?cards.number*100:cards.number*100+9}}rpx" data-day="{{day}}" data-wid="{{wid}}" data-cid="{{cid}}" bindtap="showDetail" wx:for="{{cards.weeks}}" wx:key="*this" wx:for-item="iweek" class="mg-8 kb-card-content {{cards.conflictWeeks[iweek] || (week == '*' && cards.klen > 1) ?'k-sec':''}} {{iweek==week || week == '*' ?cards.color:''}}" wx:if="{{iweek==week || week == '*'}}">
+                               <!--  <view style="height:{{cards.number==2?cards.number*100:cards.number*100+9}}rpx" data-day="{{day}}" data-wid="{{wid}}" data-cid="{{cid}}" bindtap="showDetail" wx:for="{{cards.weeks}}" wx:key="*this" wx:for-item="iweek" class="mg-8 kb-card-content {{cards.conflictWeeks[iweek] || (week == '*' && cards.klen > 1) ?'k-sec':''}} {{iweek==week || week == '*' ?cards.color:''}}" wx:if="{{iweek==week || week == '*'}}"> -->
                                     <!-- 判断上课地点是数字还是汉字 -->
-                                    <text wx:if="{{cards.place < '99999'}}" class="kb-card-place-num">{{cards.place}}</text>
-                                    <text wx:else class="kb-card-place-words">{{cards.place}}</text>
+                                    <!-- <text wx:if="{{cards.place < '99999'}}" class="kb-card-place-num">{{cards.place}}</text> -->
+                                    <text wx class="kb-card-place-words">{{cards.classlocal}}</text>
                                     <view class="kb-card-name">
-                                        <text class="kb-card-name-text" style="-webkit-line-clamp:{{3*(cards.number-1)}};">{{cards.name}}</text>
+                                        <text class="kb-card-name-text" style="-webkit-line-clamp:{{3*(cards.number-1)}};">{{cards.className}}</text>
                                     </view>
-                                </view>
-                            </block>
+                           <!--      </view> -->
+                            <!-- </block> -->
                         </view>
                     </view>
                 </view>
 
                 <!-- 遮罩层 -->
-                <view bindtap="hideDetail" class="kb-detail" wx:if="{{blur}}">
+               <!--  <view bindtap="hideDetail" class="kb-detail" wx:if="{{blur}}">
                     <view class="kb-detaile-card-ctn" style="top:{{targetY}}rpx;left:{{targetX}}rpx;">
                         <block wx:for="{{targetLessons}}" wx:key="{{cid}}" wx:for-index="cid" wx:for-item="cards">
                             <view style="height:{{cards.number*100}}rpx;left:{{cards.left}}rpx;" class="kb-card-content kb-detail-card-content {{cards.color}} {{targetI == cid ? 'kb-detail-card-content-active':''}}" data-index="{{cid}}" catchtap="infoCardTap">
@@ -104,7 +105,7 @@
                             </view>
                         </block>
                     </view>
-                </view> 
+                </view>  -->
 
             </scroll-view>        
         </view>
@@ -195,7 +196,7 @@
                 <view class="kb-info-swiper-mask-left" data-target="targetI" data-direction="left" bindtap="swiperChangeBtn">
                     <image src="/images/core/common/left_g.png"></image>
                 </view>
-                <swiper circular="{{true}}" indicator-dots="true" current="{{targetI}}" bindchange="infoCardChange" duration="250">
+              <!--   <swiper circular="{{true}}" indicator-dots="true" current="{{targetI}}" bindchange="infoCardChange" duration="250">
                     <block wx:for="{{targetLessons}}" wx:key="{{cid}}" wx:for-index="cid" style="z-index:{{cid}};">
                         <swiper-item class="kb-info-card">
                             <view class="kb-info-card-content">
@@ -230,7 +231,7 @@
                             </view>
                         </swiper-item>
                     </block>
-                </swiper>
+                </swiper> -->
                 <view class="kb-info-swiper-mask-right" data-target="targetI" data-direction="right" bindtap="swiperChangeBtn">
                     <image src="/images/core/common/right_g.png"></image>
                 </view>

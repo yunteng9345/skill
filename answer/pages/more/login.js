@@ -31,24 +31,24 @@ Page({
   },
   bind: function () {
     var _this = this;
-    if (app.g_status) {
-      app.showErrorModal(app.g_status, '绑定失败');
-      return;
-    }
+    // if (app.g_status) {
+    //   app.showErrorModal(app.g_status, '绑定失败');
+    //   return;
+    // }
     if (!_this.data.userid || !_this.data.passwd) {
       app.showErrorModal('账号及密码不能为空', '提醒');
       return false;
     }
-    if (!app._user.openid) {
-      app.showErrorModal('未能成功登录', '错误');
-      return false;
-    }
+    // if (!app._user.openid) {
+    //   app.showErrorModal('未能成功登录', '错误');
+    //   return false;
+    // }
     app.showLoadToast('绑定中');
     wx.request({
       method: 'GET',
       url: app._server + '/UserApi/bind',
       data: {
-        openid: app._user.openid,
+        openid: app.cache.openid,
         uid: _this.data.userid,
         pd: _this.data.passwd
       },
@@ -59,14 +59,14 @@ Page({
           //清除缓存
           app.cache = {};
           wx.clearStorage();
-       //   app.getUser(function () {
+          app.getUser(function () {
             wx.showToast({
               title: '绑定成功',
               icon: 'success',
               duration: 1500
             })
           wx.navigateBack();
-         // })
+          })
         }
         else {
           wx.hideToast();

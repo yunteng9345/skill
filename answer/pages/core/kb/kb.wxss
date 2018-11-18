@@ -147,6 +147,7 @@
     height: 100%;
     background: transparent;
     margin-right: 10rpx;
+    
 }
 
 .kb-bg{

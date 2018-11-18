@@ -27,7 +27,8 @@
     "pages/core/cet/cet",
     "pages/core/cet/result",
     "pages/core/fw/fw",
-    "pages/more/help/volunteerHelp"
+    "pages/more/help/volunteerHelp",
+    "pages/core/video/video"
   ],
   "window": {
     "navigationBarBackgroundColor": "#7acfa6",
@@ -61,5 +62,4 @@
     "uploadFile": 30000,
     "downloadFile": 30000
   }
-
 }
