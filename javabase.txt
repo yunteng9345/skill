@@ -1,4 +1,4 @@
-java基础
+﻿java基础
 
 Java 简介
 Java是由Sun Microsystems公司于1995年5月推出的Java面向对象程序设计语言和Java平台的总称。由James Gosling和同事们共同研发，并在1995年正式推出。
@@ -47,4 +47,8 @@ tsets
 
 信息录入系统
 2018 10 9 22 16
+
+
+
+看到一个很好的uml建模工具，无需下载，用语句去画图。www.planttext.com
 
