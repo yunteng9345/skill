@@ -324,3 +324,5 @@ wejd
 学习hessian和spring的工作原理，了解RPC和RMI及其区别等。02/28/19
 熟悉hessian、log4j2        3/1/19
 熟悉spring的工作原理、熟悉spring mvc的工作原理。3/3/19
+安装vmware，学习linux命令。3/4/19
+
