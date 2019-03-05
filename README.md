@@ -33,8 +33,7 @@ git remote set-url origin https://...../.git
 java基础
 
 学习java开源框架
-
-学习计算机网络基础
+   
 
 做一个自己的项目或者对之前的项目进行更新
 
@@ -325,4 +324,4 @@ wejd
 熟悉hessian、log4j2        3/1/19
 熟悉spring的工作原理、熟悉spring mvc的工作原理。3/3/19
 安装vmware，学习linux命令。3/4/19
-
+学习log4j的配置和使用。3/5/19
